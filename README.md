@@ -1,7 +1,7 @@
 # Botin
-Application to create and manipule a directory of professional people. 
+Application to create and manipulate a directory of professional people using only an xml document. 
 
-This application is code with : 
+This application is code with :
 
 PHP
 Twiter-Bootstrap
