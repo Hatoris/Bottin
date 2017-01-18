@@ -1,0 +1,133 @@
+<DOCTYPE HTML>
+  <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Find member of AFAM">
+    <meta name="author" content="Florian Bernard-Patrzynski">
+    <title>Admin - We people of AFAM !</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+
+    <div class="jumbotron" id="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-12 col-xs-12">
+              <h2 class="text-center"> Bonjour, l'admin ici tu peux ajouter des membres a l'AFAM !</h2>
+              <p class="text-center"> Voici le bottin des membres de l'AFAM</p>
+          </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+              <img class="img-responsive center-block" id="logo" src="img\afamlogo.png">
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" padding-top-10>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <strong> Ajouter un membre a l'AFAM </strong>
+        </div>
+        <div class="panel-body">
+          <form>
+            <div class="form-group">
+                <label for="name">Nom, prenom:</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input type="text" class="form-control" name ="name" id="name" placeholder="Nom, prenom">
+              </div>
+            </div>
+            <div class="form-group">
+                  <label for="dob">Date de naissance:</label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input type="text" class="form-control" name ="dob" id="dob" placeholder="aaaa-mm-jj">
+                 </div>
+            </div>
+            <div class="form-group">
+              <label for="sim">Numero SIM:</label>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-tags"></i></span>
+                <input type="text" class="form-control" name ="name" id="sim" placeholder="SIM">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Courriel:</label>
+              <div class="input-group">
+                <span class="input-group-addon">@</span>
+              <input type="email" class="form-control" name ="email" id="email" placeholder="xxxxx@umontreal.ca">
+            </div>
+            </div>
+              <h4><label for="name">Occupation</label></h4>
+              <div class="input_fields_wrap">
+                  <button class="btn btn-info add_field_button">Ajouter une occupation</button>
+                    <div class="form-group" style="padding-top : 10px">
+                      <table class="table table-hover" id="occupations">
+                        <tr>
+                          <td>  <label for="oname">Nom de l'occupation:</label></br><input type="text" class="form-control" id="oname" name="oname[]">  </td>
+                          <td><label for="oproject">Nom du projet:</label></br><input type="text" class="form-control" id="oproject" name="oproject[]"></td>
+                          <td><label for="osuper">Nom du superviseur:</label></br><input type="text" class="form-control" id="osuper" name="osuper[]"></td>
+                          <td><label for="ostart">Date de debut:</label></br><input type="text" class="form-control" id="ostart" name="ostart[]"></td>
+                          <td><label for="oend">Date de fin:</label></br><input type="text" class="form-control" id="oend" name="oend[]"></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <h4><label for="name">Groupe</label></h4>
+                  <div class="input_fields_wrap_groupe">
+                      <button class="btn btn-info add_field_button_groupe">Ajouter un groupe</button>
+                        <div class="form-group" style="padding-top : 10px">
+                          <table class="table table-hover" id="groupes">
+                            <tr>
+                              <td><label for="oname">Nom du groupe:</label></br><input type="text" class="form-control" id="gname" name="oname[]"> </td>
+                              <td><label for="ostart">Date de debut:</label></br><input type="text" class="form-control" id="gstart" name="ostart[]"></td>
+                              <td><label for="oend">Date de fin:</label></br><input type="text" class="form-control" id="gend" name="oend[]"></td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+
+              <button type="submit" id="submit" value="send" style="margin-top : 10px"class="btn btn-success submit"><span class="glyphicon glyphicon-floppy-save"></span> Enregister</button>
+            </div>
+          </form>
+          <span id="results">
+
+          </span>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="container" padding-top-10>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <strong>Modifier des informations sur un membre de l'AFAM</strong>
+        </div>
+        <div class="panel-body">
+          <form id="form2">
+
+          </form>
+          <span id="results1">
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/add.js"></script>
+    <script src="js/groupe.js"></script>
+      <script src="js/clipboard.min.js"></script>
+  </body>
+  </html>
