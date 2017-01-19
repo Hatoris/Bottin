@@ -3,7 +3,7 @@ Application to create and manipulate a directory of professional people using on
 
 This application is code with :
 
-*PHP
-*Twiter-Bootstrap
-*JQuery
-*HTML
+* PHP
+* Twiter-Bootstrap
+* JQuery
+* HTML
