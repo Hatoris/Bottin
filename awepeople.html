@@ -9,7 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet" type="text/css">
     <link href='css/font-awesome.css' rel='stylesheet'/>
-    <link href='css\bootstrap-datepicker3.min.css' rel='stylesheet'/>
+
   </head>
   <body>
 
@@ -43,16 +43,16 @@
             </div>
             <div class="form-group">
               <label for="dob">Date de naissance:</label>
-              <div class="input-group date">
+              <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input type="text" class="form-control" data-provide="datepicker" name ="dob" id="dob" placeholder="aaaa-mm-jj">
+                <input type="text" class="form-control date"  data-provide="datepicker" name ="dob" id="dob" placeholder="aaaa-mm-jj">
               </div>
             </div>
             <div class="form-group">
               <label for="sim">Numero SIM:</label>
               <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-tags"></i></span>
-                <input type="text" class="form-control" name ="name" id="sim" placeholder="SIM">
+                <input type="text" class="form-control" name ="sim" id="sim" placeholder="SIM">
               </div>
             </div>
             <div class="form-group">
@@ -97,9 +97,9 @@
               <div class="form-group" style="padding-top : 10px">
                 <table class="table table-hover" id="groupes">
                   <tr>
-                    <td><label for="oname">Nom du groupe:</label></br><input type="text" class="form-control" id="gname" name="oname[]"> </td>
-                    <td><label for="ostart">Date de debut:</label></br><input type="text" class="form-control" id="gstart" name="ostart[]"></td>
-                    <td><label for="oend">Date de fin:</label></br><input type="text" class="form-control" id="gend" name="oend[]"></td>
+                    <td><label for="gname">Nom du groupe:</label></br><input type="text" class="form-control" id="gname" name="gname[]"> </td>
+                    <td><label for="gstart">Date de debut:</label></br><input type="text" class="form-control" id="gstart" name="gstart[]"></td>
+                    <td><label for="gend">Date de fin:</label></br><input type="text" class="form-control" id="gend" name="gend[]"></td>
                   </tr>
                 </table>
               </div>
@@ -141,7 +141,8 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/add.js"></script>
   <script src="js/clipboard.min.js"></script>
-  <script src ="js/bootstrap-datepicker.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
   <script src="js/formhelp.js"></script>
 </body>
 </html>
