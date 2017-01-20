@@ -7,3 +7,8 @@ This application is code with :
 * Twiter-Bootstrap
 * JQuery
 * HTML
+
+Plugins used are :
+
+* [font Awesome](http://fontawesome.io/)
+* [bootstrap-datepicker](http://bootstrap-datepicker.readthedocs.io/en/latest/)
