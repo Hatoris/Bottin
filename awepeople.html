@@ -33,7 +33,7 @@
           <strong> Ajouter un membre a l'AFAM </strong>
         </div>
         <div class="panel-body">
-          <form>
+          <form action="testadd.php" method="post" class="addpeople">
             <div class="form-group">
               <label for="name">Nom, prenom:</label>
               <div class="input-group">
@@ -81,12 +81,12 @@
               <button class="btn btn-info add_field_button">Ajouter une occupation</button>
               <div class="form-group" style="padding-top : 10px">
                 <table class="table table-hover" id="occupations">
-                  <tr>
-                    <td><label for="oname">Nom de l'occupation:</label></br><input type="text" class="form-control" id="oname" name="oname[]">  </td>
-                    <td><label for="oproject">Nom du projet:</label></br><input type="text" class="form-control" id="oproject" name="oproject[]"></td>
-                    <td><label for="osuper">Nom du superviseur:</label></br><input type="text" class="form-control" id="osuper" name="osuper[]"></td>
-                    <td><label for="ostart">Date de debut:</label></br><input type="text" class="form-control" id="ostart" name="ostart[]"></td>
-                    <td><label for="oend">Date de fin:</label></br><input type="text" class="form-control" id="oend" name="oend[]"></td>
+                  <tr id="a1">
+                    <td><label for="oname">Nom de l'occupation:</label></br><input type="text" class="form-control" defaultvalue=" " id="oname" name="oname[1]">  </td>
+                    <td><label for="oproject">Nom du projet:</label></br><input type="text" class="form-control" defaultvalue=" " id="oproject" name="oproject[1]"></td>
+                    <td><label for="osuper">Nom du superviseur:</label></br><input type="text" class="form-control" defaultvalue=" " id="osuper" name="osuper[1]"></td>
+                    <td><label for="ostart">Date de debut:</label></br><input type="text" class="form-control" defaultvalue=" " id="ostart" name="ostart[1]"></td>
+                    <td><label for="oend">Date de fin:</label></br><input type="text" class="form-control" defaultvalue=" " id="oend" name="oend[1]"></td>
                   </tr>
                 </table>
               </div>
@@ -96,20 +96,22 @@
               <button class="btn btn-info add_field_button_groupe">Ajouter un groupe</button>
               <div class="form-group" style="padding-top : 10px">
                 <table class="table table-hover" id="groupes">
-                  <tr>
-                    <td><label for="gname">Nom du groupe:</label></br><input type="text" class="form-control" id="gname" name="gname[]"> </td>
-                    <td><label for="gstart">Date de debut:</label></br><input type="text" class="form-control" id="gstart" name="gstart[]"></td>
-                    <td><label for="gend">Date de fin:</label></br><input type="text" class="form-control" id="gend" name="gend[]"></td>
+                  <tr id="b1">
+                    <td><label for="gname">Nom du groupe:</label></br><input type="text" class="form-control" defaultvalue=" " id="gname" name="gname[1]"> </td>
+                    <td><label for="gstart">Date de debut:</label></br><input type="text" class="form-control" defaultvalue=" " id="gstart" name="gstart[1]"></td>
+                    <td><label for="gend">Date de fin:</label></br><input type="text" class="form-control" defaultvalue=" " id="gend" name="gend[1]"></td>
                   </tr>
                 </table>
               </div>
             </div>
-
-            <button type="submit" id="submit" value="send" style="margin-top : 10px"class="btn btn-success submit"><span class="glyphicon glyphicon-floppy-save"></span> Enregister</button>
+            <div>
+              <button type="submit" id="submit" value="send" style="margin-top : 10px"class="btn btn-success submit"><span class="glyphicon glyphicon-floppy-save"></span> Enregister</button>
+            </div>
+            <span id="results"> </br>
+            </span>
           </div>
         </form>
-        <span id="results">
-        </span>
+
       </div>
     </div>
   </div>

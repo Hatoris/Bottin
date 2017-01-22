@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="people.xml"?>
+<!--
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="people.xml"?>
+
+fichier valide en date du 2016-09-06T15h26 -->
+<people>
+  <person>
+    <sim>p1006028</sim>
+    <name>Akik, Wided</name>
+    <email>wided.akik@umontreal.ca</email>
+    <dob>1992-02-16</dob>
+    <occupation>
+      <name>M.Sc.</name>
+      <project>Bioproduction of BCRP</project>
+      <supervisor>Leclair, Gr&#xE9;goire</supervisor>
+      <supervisor>Servant, Marc</supervisor>
+      <start>2015-09-01</start>
+    </occupation>
+    <group>
+      <name>afam-grad</name>
+      <start>2015-09-01</start>
+    </group>
+    <group>
+      <name>labbiod</name>
+      <start>2015-09-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p38r950</sim>
+    <name>test</name>
+    <email>test@</email>
+    <dob>test</dob>
+    <occupation>
+      <name>PhD</name>
+      <prject>PrimB3</prject>
+      <supervisior>V.G. Roullin</supervisior>
+      <start>PhD</start>
+      <end>PhD</end>
+    </occupation>
+    <group>
+      <name>afam-grad</name>
+      <start>2014-07-13</start>
+    </group>
+  </person>
+  <person>
+    <sim>p38r950</sim>
+    <name>test</name>
+    <email>test@</email>
+    <dob>test</dob>
+    <occupation>
+      <name>PhD</name>
+      <prject>PrimB3</prject>
+      <supervisior>V.G. Roullin</supervisior>
+      <start>PhD</start>
+      <end>PhD</end>
+    </occupation>
+    <group>
+      <name>afam-grad</name>
+      <start>2014-07-13</start>
+    </group>
+  </person>
+  <person>
+    <sim>p38r950</sim>
+    <name>test</name>
+    <email>test@</email>
+    <dob>test</dob>
+    <occupation>
+      <name>PhD</name>
+      <prject>PrimB3</prject>
+      <supervisior>V.G. Roullin</supervisior>
+      <start>PhD</start>
+      <end>PhD</end>
+    </occupation>
+    <group>
+      <name>afam-grad</name>
+      <start>2014-07-13</start>
+    </group>
+  </person>
+  <person>
+    <sim>p455555</sim>
+    <name>test</name>
+    <email>test@</email>
+    <dob>test</dob>
+    <occupation>
+      <name>PhD</name>
+      <prject>PrimB3</prject>
+      <supervisior>V.G. Roullin</supervisior>
+      <start>PhD</start>
+      <end>PhD</end>
+    </occupation>
+    <group>
+      <name>afam-grad</name>
+      <start>2014-07-13</start>
+    </group>
+  </person>
+  <person>
+    <sim/>
+    <email/>
+    <dob/>
+    <occupation>
+      <name>PhD</name>
+      <prject>PrimB3</prject>
+      <supervisior>V.G. Roullin</supervisior>
+      <start>PhD</start>
+      <end>PhD</end>
+    </occupation>
+  </person>
+  <person>
+    <sim>p1079118</sim>
+    <name>Florian, bernard</name>
+    <email>florian@test.ca</email>
+    <dob>2017-01-17</dob>
+    <office>4179</office>
+    <phoneext>0407</phoneext>
+    <occupation>
+      <name>florian</name>
+      <project>test</project>
+      <supervisior/>
+      <start>2017-01-21</start>
+      <end/>
+    </occupation>
+    <occupation>
+      <name>gtefd</name>
+      <project/>
+      <supervisior/>
+      <start>2017-02-04</start>
+      <end/>
+    </occupation>
+    <group>
+      <name>afam-grad</name>
+      <start>2017-01-03</start>
+      <end>2017-01-24</end>
+    </group>
+  </person>
+  <person>
+    <sim>p10798</sim>
+    <name>Florian, Thomas</name>
+    <email>udempower@test.ca</email>
+    <dob>2017-01-18</dob>
+    <office>4129</office>
+    <phoneext>0407</phoneext>
+    <occupation>
+      <name>TEST</name>
+      <project>POWER</project>
+      <supervisior>null</supervisior>
+      <start>2017-01-21</start>
+      <end/>
+    </occupation>
+    <group>
+      <name>AFAM-Grad</name>
+      <start>2017-01-24</start>
+      <end>null</end>
+    </group>
+  </person>
+  <person>
+    <sim>p109876</sim>
+    <name>Florian, Thomas</name>
+    <email>udemflo@com.ca</email>
+    <dob>2017-01-11</dob>
+    <office>test</office>
+    <phoneext>wef</phoneext>
+    <occupation>
+      <name>JETEST</name>
+      <project>VIDE</project>
+      <supervisior> </supervisior>
+      <start>2017-01-10</start>
+      <end/>
+    </occupation>
+    <group>
+      <name>PARAEILL</name>
+      <start>2017-01-21</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>p109876</sim>
+    <name>Florian, Thomas</name>
+    <email>udemflo@com.ca</email>
+    <dob>2017-01-11</dob>
+    <office>test</office>
+    <phoneext>wef</phoneext>
+    <occupation>
+      <name>JETEST</name>
+      <project>VIDE</project>
+      <supervisior> </supervisior>
+      <start>2017-01-10</start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>PARAEILL</name>
+      <start>2017-01-21</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim/>
+    <name/>
+    <email/>
+    <dob/>
+    <office/>
+    <phoneext/>
+    <occupation>
+      <name/>
+      <project/>
+      <supervisior/>
+      <start/>
+      <end/>
+    </occupation>
+    <group>
+      <name/>
+      <start/>
+      <end/>
+    </group>
+  </person>
+  <person>
+    <sim/>
+    <name/>
+    <email/>
+    <dob/>
+    <office/>
+    <phoneext/>
+    <occupation>
+      <name/>
+      <project/>
+      <supervisior/>
+      <start/>
+      <end/>
+    </occupation>
+    <group>
+      <name/>
+      <start/>
+      <end/>
+    </group>
+  </person>
+  <person>
+    <sim/>
+    <name/>
+    <email/>
+    <dob/>
+    <office/>
+    <phoneext/>
+    <occupation>
+      <name/>
+      <project/>
+      <supervisior/>
+      <start/>
+      <end/>
+    </occupation>
+    <group>
+      <name/>
+      <start/>
+      <end/>
+    </group>
+  </person>
+</people>
