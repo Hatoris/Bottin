@@ -40,7 +40,7 @@ class getInfo {
     static public function callPeopleXML()
     {
         $curl = curl_init();
-        curl_setopt($curl, CURLOPT_URL,"http://localhost/afam/people.xml");
+        curl_setopt($curl, CURLOPT_URL,"http://localhost/botin/peopletest.xml");
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         $contenu = curl_exec($curl);
         $xml = new SimpleXMLElement($contenu);

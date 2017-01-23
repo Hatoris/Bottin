@@ -11,165 +11,98 @@
   </head>
   <body>
 
+    '<div class="container" padding-top-10>
+                   <div class="panel panel-primary">
+                     <div class="panel-heading">
+                       <strong> Modifier un membre a l\'AFAM </strong>
+                     </div>
+                     <div class="panel-body">
+                       <form action="testadd.php" method="post" class="addpeople">
+                         <div class="form-group">
+                           <label for="name">Nom, prenom:</label>
+                           <div class="input-group">
+                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                             <input type="text" class="form-control" name ="name" value="' . $people->name . '" id="name" placeholder="Nom, prenom">
+                           </div>
+                         </div>
+                         <div class="form-group">
+                           <label for="dob">Date de naissance:</label>
+                           <div class="input-group">
+                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                             <input type="text" class="form-control date"  data-provide="datepicker" value="' . $people->dob . '" name ="dob" id="dob" placeholder="aaaa-mm-jj">
+                           </div>
+                         </div>
+                         <div class="form-group">
+                           <label for="sim">Numero SIM:</label>
+                           <div class="input-group">
+                             <span class="input-group-addon"><i class="glyphicon glyphicon-tags"></i></span>
+                             <input type="text" class="form-control" name ="sim" value="' . $people->sim . '" id="sim" placeholder="SIM">
+                           </div>
+                         </div>
+                         <div class="form-group">
+                           <label for="email">Courriel:</label>
+                           <div class="input-group">
+                             <span class="input-group-addon">@</span>
+                             <input type="email" class="form-control" name ="email" value="' . $people->email . '" id="email" placeholder="xxxxx@umontreal.ca">
+                           </div>
+                         </div>
+                         <div class="form-group">
+                           <label for="office">Bureau N°:</label>
+                           <div class="input-group">
+                             <span class="input-group-addon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                             <input type="office" class="form-control" name ="office" value="' . $people->office . '" id="office" placeholder="4179">
+                           </div>
+                         </div>
+                         <div class="form-group">
+                           <label for="phoneext">Extension téléphone N°:</label>
+                           <div class="input-group">
+                             <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                             <input type="phoneext" class="form-control" value="' . $people->phoneext . '" name ="phoneext" id="phoneext" placeholder="0407">
+                           </div>
+                         </div>
+                         <h4><label for="name">Occupation</label></h4>
+                         <div class="input_fields_wrap">
+                           <button class="btn btn-info add_field_button">Ajouter une occupation</button>
+                           <div class="form-group" style="padding-top : 10px">
+                             <table class="table table-hover" id="occupations">' ;
+                                  foreach ($people->occupation as $occ) {
+                                   echo '<tr id="a1">
+                                    <td><label for="oname">Nom de l\'occupation:</label></br><input type="text" value="' . $occ->name . '" class="form-control" defaultvalue=" " id="oname" name="oname[1]">  </td>
+                                    <td><label for="oproject">Nom du projet:</label></br><input type="text" value="' . $occ->project . '" class="form-control" defaultvalue=" " id="oproject" name="oproject[1]"></td>
+                                    <td><label for="osuper">Nom du superviseur:</label></br><input type="text" value="' . $occ->superviser . '" class="form-control" defaultvalue=" " id="osuper" name="osuper[1]"></td>
+                                    <td><label for="ostart">Date de debut:</label></br><input type="text" value="' . $occ->start . '" class="form-control" defaultvalue=" " id="ostart" name="ostart[1]"></td>
+                                    <td><label for="oend">Date de fin:</label></br><input type="text" value="' . $occ->end . '" class="form-control" defaultvalue=" " id="oend" name="oend[1]"></td>
+                                   </tr>' ;
+                             }
 
-    <div class="jumbotron" id="jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-12 col-xs-12">
-            <h2 class="text-center"> Bonjour, membres de l'AFAM !</h2>
-            <p class="text-center"> Bottin des membres de l'AFAM</p>
-          </div>
-          <div class="col-md-4 col-sm-12 col-xs-12">
-            <img class="img-responsive center-block" id="logo" src="img\afamlogo.png">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container" padding-top-10>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          Trouver des informations sur une personne de l'AFAM
-        </div>
-        <div class="panel-body">
-          <form>
-            <div class="form-group">
-              <label for="name">Entrer vos mots clefs :</label>
-              <input type="text" class="form-control" name ="name" id="name" placeholder="Nom, SIM ou courriel">
-              <button type="submit" id="submit" value="send" style="margin-top : 10px"class="btn btn-info submit">Chercher</button>
-            </div>
-          </form>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              Florian Bernard
-            </div>
-            <div class="panel-body">
-              <div class="container">
-                <div class="row">
-                  <h4>
-                    <label>Informations generales</label>
-                  </h4>
-                </div>
-                <div class="row">
-                  <label>
-                    Numero SIM :
-                  </label>
-                  P1079118
-                </div>
-                <div class="row">
-                  <label>
-                    Date de naissance:
-                  </label>
-                  1990-07-20
-                </div>
-                <div class="row">
-                  <label>
-                    Courriel:
-                  </label>
-                  florian.bernard@umontreal.ca
-                </div>
-                <div class="row">
-                  <h4>
-                    <label>Occupation</label>
-                  </h4>
-                </div>
-                <div class="row">
-                  <label>Fonction :</label>
-                   Ph.D
-                </div>
-                  <div class="row">
-                    <label>
-                      Superviseur:
-                    </label>
-                    V. Gaelle Roullin
-                  </div>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <tr>
-                        <th class="col-md-3">
-                          projet
-                        </th>
-                        <th class="col-md-3">
-                          Debut
-                        </td>
-                        <th class="col-md-3">
-                          Fin
-                        </th>
-                      </tr>
-                      <tr>
-                        <td>
-                          model primB3
-                        </td>
-                        <td>
-                          2014-01-01
-                        </td>
-                        <td>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                    <div class="row">
-                      <h4>
-                    <label>Groupe</label>
-                      </h4>
-                    </div>
-                <div class="table-responsive">
-                        <table class="table table-striped">
-                          <tr>
-                            <th class="col-md-3">
-                              Nom du groupe
-                            </th>
-                            <th class="col-md-3">
-                              Debut
-                            </td>
-                            <th class="col-md-3">
-                              Fin
-                            </th>
-                          </tr>
-                          <tr>
-                            <td>
-                              afam-grad
-                            </td>
-                            <td>
-                              2014-09-01
-                            </td>
-                            <td>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              labbiod
-                            </td>
-                            <td>
-                              2014-09-01
-                            </td>
-                            <td>
-                            </td>
-                          </tr>
-                        </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+                              echo '
+                             </table>
+                           </div>
+                         </div>
+                         <h4><label for="name">Groupe</label></h4>
+                         <div class="input_fields_wrap_groupe">
+                           <button class="btn btn-info add_field_button_groupe">Ajouter un groupe</button>
+                           <div class="form-group" style="padding-top : 10px">
+                             <table class="table table-hover" id="groupes">';
+                             foreach ($people->group as $gro) {
+                               echo '<tr id="b1">
+                                 <td><label for="gname">Nom du groupe:</label></br><input type="text" value="' . $gro->name . '" class="form-control" defaultvalue=" " id="gname" name="gname[1]"> </td>
+                                 <td><label for="gstart">Date de debut:</label></br><input type="text" value="' . $occ->start . '" class="form-control" defaultvalue=" " id="gstart" name="gstart[1]"></td>
+                                 <td><label for="gend">Date de fin:</label></br><input type="text" value="' . $occ->end . '" class="form-control" defaultvalue=" " id="gend" name="gend[1]"></td>
+                               </tr>' ;
+                         }
+                             echo '</table>
+                           </div>
+                         </div>
+                         <div>
+                           <button type="submit" id="submit" value="send" style="margin-top : 10px"class="btn btn-success submit"><span class="glyphicon glyphicon-floppy-save"></span> Enregister</button>
+                         </div>
+                         </form>
+                       </div>
 
+                   </div>
 
-  </div>
-</div>
-</div>
-<div class="container" padding-top-10>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      Trouver des informations sur un groupe
-    </div>
-    <div class="panel-body">
-
-    </div>
-  </div>
-</div>
-
+               </div>'
 
 
 

@@ -45,7 +45,7 @@
               <label for="dob">Date de naissance:</label>
               <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input type="text" class="form-control date"  data-provide="datepicker" name ="dob" id="dob" placeholder="aaaa-mm-jj">
+                <input type="text" class="form-control date"  defaultvalue=" " data-provide="datepicker" name ="dob" id="dob" placeholder="aaaa-mm-jj">
               </div>
             </div>
             <div class="form-group">
@@ -66,14 +66,14 @@
               <label for="office">Bureau N°:</label>
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
-                <input type="office" class="form-control" name ="office" id="office" placeholder="4179">
+                <input type="office" class="form-control" defaultvalue=" " name ="office" id="office" placeholder="4179">
               </div>
             </div>
             <div class="form-group">
               <label for="phoneext">Extension téléphone N°:</label>
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                <input type="phoneext" class="form-control" name ="phoneext" id="phoneext" placeholder="0407">
+                <input type="phoneext" class="form-control" defaultvalue=" " name ="phoneext" id="phoneext" placeholder="0407">
               </div>
             </div>
             <h4><label for="name">Occupation</label></h4>
@@ -121,8 +121,12 @@
         <strong>Modifier des informations sur un membre de l'AFAM</strong>
       </div>
       <div class="panel-body">
-        <form id="form2">
-
+        <form>
+          <div class="form-group">
+            <label for="name">Entrer vos mots clefs :</label>
+            <input type="text" class="form-control" name ="modifyname" id="modifyname" placeholder="Nom, SIM ou courriel">
+            <button type="submit" id="submit1" value="send" style="margin-top : 10px" class="btn btn-info submit"><span class="glyphicon glyphicon-search"></span> Chercher</button>
+          </div>
         </form>
         <span id="results1">
         </span>
@@ -145,6 +149,7 @@
   <script src="js/clipboard.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-  <script src="js/formhelp.js"></script>
+  <script src="js/formhelp2.js"></script>
+  <script src="js/modify.js"></script>
 </body>
 </html>

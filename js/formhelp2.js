@@ -5,13 +5,10 @@ $(document).ready(function(){
           autoclose: true,
       });
 
-      $("form.addpeople").on('submit', function() {
-        var that = $(this),
-            url = that.attr('action'),
-            type = that.attr('method'),
-            datas = {};
+      $("#submit").click(function() {
+        var datas = {};
 
-              that.find('[name]').each(function(index, value) {
+              $("form.addpeople").find('[name]').each(function(index, value) {
                 if($(this).val() == '') {
                   var vals = $(this).attr('defaultvalue');
                 }
@@ -25,12 +22,12 @@ $(document).ready(function(){
               });
 
               $.ajax({
-                url : url,
-                type : type,
+                url : 'testadd.php',
+                type : 'post',
                 data : datas,
                 success : function(response) {
                   if(response == 'Success'){
-                    $("#results").append('<div class="alert alert-success" role="alert"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><span class="sr-only">Success:</span>' + that.find('[name]').val() + ' a bien été ajouté aux membres de l\'AFAM</div>');
+                    $("#results").append('<div class="alert alert-success" role="alert"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><span class="sr-only">Success:</span>' + $("form.addpeople").find("input[name='name']").val() + ' a bien été ajouté aux membres de l\'AFAM</div>');
                   }
                   else {
                     $("#results").append('<div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><span class="sr-only">Error:</span> Vous n\'avaez pas remplis le nom, le sim ou le courriel</div>');
