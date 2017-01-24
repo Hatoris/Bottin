@@ -57,6 +57,7 @@ static public function callModify($name) {
         error_reporting(0);
                 $z=0;
                 $u=0;
+                $xc = 1;
                     $info = getInfo::callPeopleXML();
 
                       foreach($info->person as $v) {
@@ -68,9 +69,10 @@ static public function callModify($name) {
 
                       if ($y >= 1) {
                            $people = $info->person[$u];
+
             echo
                 '
-                     <div class="panel panel-primary">
+                     <div class="panel panel-primary" tag="modify"'. $xc .'" id="'. $xc .'">
                        <div class="panel-heading">
                          <strong> Modifier un membre a l\'AFAM </strong>
                        </div>
@@ -120,9 +122,9 @@ static public function callModify($name) {
                            </div>
                            <h4><label for="name">Occupation</label></h4>
                            <div class="input_fields_wrap">
-                             <button class="btn btn-info add_field_button_bis">Ajouter une occupation</button>
+                             <button class="btn btn-info add_field_button_bis" id="'. $xc .'">Ajouter une occupation</button>
                              <div class="form-group" style="padding-top : 10px">
-                               <table class="table table-hover" id="occupationsbis">' ;
+                               <table class="table table-hover" id="occupationsbis'. $xc .'">' ;
                                     $c = 1 ;
                                     foreach ($people->occupation as $occ) {
 
@@ -143,9 +145,9 @@ static public function callModify($name) {
                            </div>
                            <h4><label for="name">Groupe</label></h4>
                            <div class="input_fields_wrap_groupe_bis">
-                             <button class="btn btn-info add_field_button_groupe_bis">Ajouter un groupe</button>
+                             <button class="btn btn-info add_field_button_groupe_bis" id="'. $xc .'">Ajouter un groupe</button>
                              <div class="form-group" style="padding-top : 10px">
-                               <table class="table table-hover" id="groupesbis">';
+                               <table class="table table-hover" id="groupesbis'. $xc .'">';
                                $d = 1 ;
                                foreach ($people->group as $gro) {
 
@@ -166,6 +168,8 @@ static public function callModify($name) {
                            </form>
                          </div>
                        </div>' ;
+
+                       ++$xc;
 
                           }
                           ++$u;

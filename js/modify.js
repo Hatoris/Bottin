@@ -9,20 +9,18 @@ $(document).ready(function(){
           data : 'name=' + datas,
           success : function(response) {
             $("#results1").append(response);
-            var max_fields      = 10; //maximum input boxes allowed
+
+            var max_fields      = 100; //maximum input boxes allowed
             var wrapper         = $(".input_fields_wrap_groupe_bis"); //Fields wrapper
             var add_button      = $(".add_field_button_bis"); //Add button ID
             var add_groupe      = $(".add_field_button_groupe_bis");//Add button group
 
-            var x = 1 ;
-              $(".occ").find('[tr]').each(function(){
-                  x = x + 1;
-              });
+            var x = 20 ;
             $(add_button).click(function(e){ //on add input button click
                 e.preventDefault();
                 if(x < max_fields){ //max input box allowed
                     x++; //text box increment
-                    $("#occupationsbis").append('<tr id="c' + x +'"><td><label for="oname">Nom de l\'occupation:</label></br><input type="text" class="form-control" defaultvalue=" " id="oname" name="oname[' + x +']"></td><td><label for="oproject">Nom du projet:</label></br><input type="text" class="form-control" defaultvalue=" " id="oproject" name="oproject[' + x +']"></td><td><label for="osuper">Nom du superviseur:</label></br><input type="text" class="form-control" defaultvalue=" " id="osuper" name="osuper[' + x +']"></td><td><label for="ostart">Date de debut:</label></br><input type="text" class="form-control" defaultvalue=" " id="ostart" name="ostart[' + x +']"></td><td><label for="oend">Date de fin:</label></br><input type="text" class="form-control" defaultvalue=" " id="oend" name="oend[' + x +']"></td><td><a href="#" class="glyphicon glyphicon-remove remove_field" id="' + x + '" style="align: center"></a></td></tr>'); //add input box
+                    $("#occupationsbis").append('<tr id="c' + x +'"><td><label for="oname">Nom de l\'occupation:</label></br><input type="text" class="form-control" defaultvalue=" " id="oname" name="oname[' + x +']"></td><td><label for="oproject">Nom du projet:</label></br><input type="text" class="form-control" defaultvalue=" " id="oproject" name="oproject[' + x +']"></td><td><label for="osuper">Nom du superviseur:</label></br><input type="text" class="form-control" defaultvalue=" " id="osuper" name="osuper[' + x +']"></td><td><label for="ostart">Date de debut:</label></br><input type="text" class="form-control" defaultvalue=" " id="ostart" name="ostart[' + x +']"></td><td><label for="oend">Date de fin:</label></br><input type="text" class="form-control" defaultvalue=" " id="oend" name="oend[' + x +']"></td><td><a href="#" class="glyphicon glyphicon-remove remove_field_bis" id="' + x + '" style="align: center"></a></td></tr>'); //add input box
                     console.log(x);
                 }
                 $("#ostart, #oend").datepicker({
@@ -35,20 +33,20 @@ $(document).ready(function(){
                     console.log(x);
                 })
             });
-            $("#occupationsbis").on("click",".remove_field_bis", function(e){ //user click on remove text
-                e.preventDefault();  $("#c" + $(this).attr("id")).remove(); x--;
-            })
 
-            var y = 1 ;
+            /*
               $(".gro").find('[tr]').each(function(){
-                  y = x + 1;
+                      y++;
               });
+              var y =  $("gro:last").attr("id");
+              */
+              var y = 20;
 
             $(add_groupe).click(function(e){ //on add input button click
                 e.preventDefault();
                 if(y < max_fields){ //max input box allowed
-                    y++; //text box increment
-                    $("#groupesbis").append('<tr id="d' + y +'"><td><label for="gname">Nom du groupe:</label></br><input type="text" class="form-control" defaultvalue=" " id="gname" name="gname[' + y +']"> </td><td><label for="gstart">Date de debut:</label></br><input type="text" class="form-control" defaultvalue=" " id="gstart" name="gstart[' + y +']"></td><td><label for="gend">Date de fin:</label></br><input type="text" class="form-control" defaultvalue=" " id="gend" name="gend[' + y +']"></td><td><a href="#" class="glyphicon glyphicon-remove remove_field_groupe" id="' + y + '" style="align: center"></a></td></tr>'); //add input box
+                    y++;
+                    $("#groupesbis").append('<tr id="d' + y +'"><td><label for="gname">Nom du groupe:</label></br><input type="text" class="form-control" defaultvalue=" " id="gname" name="gname[' + y +']"> </td><td><label for="gstart">Date de debut:</label></br><input type="text" class="form-control" defaultvalue=" " id="gstart" name="gstart[' + y +']"></td><td><label for="gend">Date de fin:</label></br><input type="text" class="form-control" defaultvalue=" " id="gend" name="gend[' + y +']"></td><td><a href="#" class="glyphicon glyphicon-remove remove_field_groupe_bis" id="' + y + '" style="align: center"></a></td></tr>'); //add input box
                     console.log(y);
                 }
                 $("#gstart, #gend").datepicker({
@@ -61,9 +59,7 @@ $(document).ready(function(){
                     console.log(y);
                 })
             });
-            $("#groupesbis").on("click",".remove_field_groupe_bis", function(e){ //user click on remove text
-                e.preventDefault(); $("#d" + $(this).attr("id")).remove(); y--;
-            })
+
 
           }
         });
