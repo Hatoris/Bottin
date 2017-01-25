@@ -72,12 +72,13 @@ static public function callModify($name) {
 
             echo
                 '
-                     <div class="panel panel-primary" tag="modify"'. $xc .'" id="'. $xc .'">
+                     <div class="panel panel-primary" target="' . $xc . '" tag="modify"'. $xc .'" id="'. $xc .'">
                        <div class="panel-heading">
                          <strong> Modifier un membre a l\'AFAM </strong>
+                         <a id="linkClose"  href="#" class="close" target="' . $xc . '">&times;</a>
                        </div>
                        <div class="panel-body">
-                         <form action="testadd.php" method="post" class="addpeople">
+                         <form class="modifypeople">
                            <div class="form-group">
                              <label for="name">Nom, prenom:</label>
                              <div class="input-group">
@@ -163,8 +164,9 @@ static public function callModify($name) {
                              </div>
                            </div>
                            <div>
-                             <button type="submit" id="submit" value="send" style="margin-top : 10px"class="btn btn-success submit"><span class="glyphicon glyphicon-floppy-save"></span> Enregister</button>
+                             <button type="submit2'. $xc .'" id="'. $xc .'" value="send" style="margin-top : 10px"class="btn btn-warning submit"><span class="glyphicon glyphicon glyphicon-paste"></span> Modifier</button>
                            </div>
+                            <span class="results'. $xc .'" id="'. $xc .'"></span>
                            </form>
                          </div>
                        </div>' ;

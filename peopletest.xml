@@ -165,23 +165,23 @@ fichier valide en date du 2016-09-06T15h26 -->
     </group>
   </person>
   <person>
-    <sim>p109748</sim>
-    <name>Florian</name>
-    <email>florian@gmail.ca</email>
-    <dob>2017-01-05</dob>
-    <office>4179</office>
-    <phoneext> </phoneext>
+    <sim>p1006028</sim>
+    <name>Akik, Wided</name>
+    <email>wided.akik@umontreal.ca</email>
+    <dob>1992-02-16</dob>
+    <office>on ajoute des trucs </office>
+    <phoneext>klwqefiwbfhuewbf</phoneext>
     <occupation>
-      <name>testdm</name>
-      <project>efwef</project>
+      <name>M.Sc.</name>
+      <project>Bioproduction of BCRP</project>
       <supervisior/>
-      <start>2017-01-17</start>
-      <end> </end>
+      <start>2015-09-01</start>
+      <end/>
     </occupation>
     <group>
-      <name>afam-grad</name>
-      <start>2017-01-17</start>
-      <end> </end>
+      <name>labbiod</name>
+      <start>2015-09-01</start>
+      <end/>
     </group>
   </person>
   <person>
@@ -189,7 +189,47 @@ fichier valide en date du 2016-09-06T15h26 -->
     <name>Akik, Wided</name>
     <email>wided.akik@umontreal.ca</email>
     <dob>1992-02-16</dob>
-    <office/>
+    <office>kqjehdqyebfuqebvfwe</office>
+    <phoneext>welkmfwenjvweh</phoneext>
+    <occupation>
+      <name>M.Sc.</name>
+      <project>Bioproduction of BCRP</project>
+      <supervisior/>
+      <start>2015-09-01</start>
+      <end/>
+    </occupation>
+    <group>
+      <name>labbiod</name>
+      <start>2015-09-01</start>
+      <end/>
+    </group>
+  </person>
+  <person>
+    <sim>p1006028</sim>
+    <name>Akik, Wided</name>
+    <email>wided.akik@umontreal.ca</email>
+    <dob>1992-02-16</dob>
+    <office>wenwebjhbfwje</office>
+    <phoneext/>
+    <occupation>
+      <name>M.Sc.</name>
+      <project>Bioproduction of BCRP</project>
+      <supervisior/>
+      <start>2015-09-01</start>
+      <end/>
+    </occupation>
+    <group>
+      <name>labbiod</name>
+      <start>2015-09-01</start>
+      <end/>
+    </group>
+  </person>
+  <person>
+    <sim>p1006028</sim>
+    <name>Akik, Wided</name>
+    <email>wided.akik@umontreal.ca</email>
+    <dob>1992-02-16</dob>
+    <office>wdvwv</office>
     <phoneext/>
     <occupation>
       <name>M.Sc.</name>
@@ -210,7 +250,7 @@ fichier valide en date du 2016-09-06T15h26 -->
     <email>wided.akik@umontreal.ca</email>
     <dob>1992-02-16</dob>
     <office/>
-    <phoneext/>
+    <phoneext>wekjfbejhbfvwejvfjqegvf</phoneext>
     <occupation>
       <name>M.Sc.</name>
       <project>Bioproduction of BCRP</project>
@@ -230,287 +270,7 @@ fichier valide en date du 2016-09-06T15h26 -->
     <email>wided.akik@umontreal.ca</email>
     <dob>1992-02-16</dob>
     <office/>
-    <phoneext/>
-    <occupation>
-      <name>M.Sc.</name>
-      <project>Bioproduction of BCRP</project>
-      <supervisior/>
-      <start>2015-09-01</start>
-      <end/>
-    </occupation>
-    <group>
-      <name>labbiod</name>
-      <start>2015-09-01</start>
-      <end/>
-    </group>
-  </person>
-  <person>
-    <sim>p1006028</sim>
-    <name>Akik, Wided</name>
-    <email>wided.akik@umontreal.ca</email>
-    <dob>1992-02-16</dob>
-    <office/>
-    <phoneext/>
-    <occupation>
-      <name>M.Sc.</name>
-      <project>Bioproduction of BCRP</project>
-      <supervisior/>
-      <start>2015-09-01</start>
-      <end/>
-    </occupation>
-    <group>
-      <name>labbiod</name>
-      <start>2015-09-01</start>
-      <end/>
-    </group>
-  </person>
-  <person>
-    <sim>p1006028</sim>
-    <name>Akik, Wided</name>
-    <email>wided.akik@umontreal.ca</email>
-    <dob>1992-02-16</dob>
-    <office/>
-    <phoneext/>
-    <occupation>
-      <name>M.Sc.</name>
-      <project>Bioproduction of BCRP</project>
-      <supervisior/>
-      <start>2015-09-01</start>
-      <end/>
-    </occupation>
-    <group>
-      <name>labbiod</name>
-      <start>2015-09-01</start>
-      <end/>
-    </group>
-  </person>
-  <person>
-    <sim>p1006028</sim>
-    <name>Akik, Wided</name>
-    <email>wided.akik@umontreal.ca</email>
-    <dob>1992-02-16</dob>
-    <office/>
-    <phoneext/>
-    <occupation>
-      <name>M.Sc.</name>
-      <project>Bioproduction of BCRP</project>
-      <supervisior/>
-      <start>2015-09-01</start>
-      <end/>
-    </occupation>
-    <group>
-      <name>labbiod</name>
-      <start>2015-09-01</start>
-      <end/>
-    </group>
-  </person>
-  <person>
-    <sim>p1006028</sim>
-    <name>Akik, Wided</name>
-    <email>wided.akik@umontreal.ca</email>
-    <dob>1992-02-16</dob>
-    <office/>
-    <phoneext/>
-    <occupation>
-      <name>M.Sc.</name>
-      <project>Bioproduction of BCRP</project>
-      <supervisior/>
-      <start>2015-09-01</start>
-      <end/>
-    </occupation>
-    <group>
-      <name>labbiod</name>
-      <start>2015-09-01</start>
-      <end/>
-    </group>
-  </person>
-  <person>
-    <sim>p1006028</sim>
-    <name>Akik, Wided</name>
-    <email>wided.akik@umontreal.ca</email>
-    <dob>1992-02-16</dob>
-    <office/>
-    <phoneext/>
-    <occupation>
-      <name>M.Sc.</name>
-      <project>Bioproduction of BCRP</project>
-      <supervisior/>
-      <start>2015-09-01</start>
-      <end/>
-    </occupation>
-    <group>
-      <name>labbiod</name>
-      <start>2015-09-01</start>
-      <end/>
-    </group>
-  </person>
-  <person>
-    <sim>p1006028</sim>
-    <name>Akik, Wided</name>
-    <email>wided.akik@umontreal.ca</email>
-    <dob>1992-02-16</dob>
-    <office/>
-    <phoneext/>
-    <occupation>
-      <name>M.Sc.</name>
-      <project>Bioproduction of BCRP</project>
-      <supervisior/>
-      <start>2015-09-01</start>
-      <end/>
-    </occupation>
-    <group>
-      <name>labbiod</name>
-      <start>2015-09-01</start>
-      <end/>
-    </group>
-  </person>
-  <person>
-    <sim>p1006028</sim>
-    <name>Akik, Wided</name>
-    <email>wided.akik@umontreal.ca</email>
-    <dob>1992-02-16</dob>
-    <office/>
-    <phoneext/>
-    <occupation>
-      <name>M.Sc.</name>
-      <project>Bioproduction of BCRP</project>
-      <supervisior/>
-      <start>2015-09-01</start>
-      <end/>
-    </occupation>
-    <group>
-      <name>labbiod</name>
-      <start>2015-09-01</start>
-      <end/>
-    </group>
-  </person>
-  <person>
-    <sim>p1006028</sim>
-    <name>Akik, Wided</name>
-    <email>wided.akik@umontreal.ca</email>
-    <dob>1992-02-16</dob>
-    <office/>
-    <phoneext/>
-    <occupation>
-      <name>M.Sc.</name>
-      <project>Bioproduction of BCRP</project>
-      <supervisior/>
-      <start>2015-09-01</start>
-      <end/>
-    </occupation>
-    <group>
-      <name>labbiod</name>
-      <start>2015-09-01</start>
-      <end/>
-    </group>
-  </person>
-  <person>
-    <sim>p1006028</sim>
-    <name>Akik, Wided</name>
-    <email>wided.akik@umontreal.ca</email>
-    <dob>1992-02-16</dob>
-    <office/>
-    <phoneext/>
-    <occupation>
-      <name>M.Sc.</name>
-      <project>Bioproduction of BCRP</project>
-      <supervisior/>
-      <start>2015-09-01</start>
-      <end/>
-    </occupation>
-    <group>
-      <name>labbiod</name>
-      <start>2015-09-01</start>
-      <end/>
-    </group>
-  </person>
-  <person>
-    <sim>p1006028</sim>
-    <name>Akik, Wided</name>
-    <email>wided.akik@umontreal.ca</email>
-    <dob>1992-02-16</dob>
-    <office/>
-    <phoneext/>
-    <occupation>
-      <name>M.Sc.</name>
-      <project>Bioproduction of BCRP</project>
-      <supervisior/>
-      <start>2015-09-01</start>
-      <end/>
-    </occupation>
-    <group>
-      <name>labbiod</name>
-      <start>2015-09-01</start>
-      <end/>
-    </group>
-  </person>
-  <person>
-    <sim>p1006028</sim>
-    <name>Akik, Wided</name>
-    <email>wided.akik@umontreal.ca</email>
-    <dob>1992-02-16</dob>
-    <office/>
-    <phoneext/>
-    <occupation>
-      <name>M.Sc.</name>
-      <project>Bioproduction of BCRP</project>
-      <supervisior/>
-      <start>2015-09-01</start>
-      <end/>
-    </occupation>
-    <group>
-      <name>labbiod</name>
-      <start>2015-09-01</start>
-      <end/>
-    </group>
-  </person>
-  <person>
-    <sim>p1006028</sim>
-    <name>Akik, Wided</name>
-    <email>wided.akik@umontreal.ca</email>
-    <dob>1992-02-16</dob>
-    <office/>
-    <phoneext/>
-    <occupation>
-      <name>M.Sc.</name>
-      <project>Bioproduction of BCRP</project>
-      <supervisior/>
-      <start>2015-09-01</start>
-      <end/>
-    </occupation>
-    <group>
-      <name>labbiod</name>
-      <start>2015-09-01</start>
-      <end/>
-    </group>
-  </person>
-  <person>
-    <sim>p1006028</sim>
-    <name>Akik, Wided</name>
-    <email>wided.akik@umontreal.ca</email>
-    <dob>1992-02-16</dob>
-    <office/>
-    <phoneext/>
-    <occupation>
-      <name>M.Sc.</name>
-      <project>Bioproduction of BCRP</project>
-      <supervisior/>
-      <start>2015-09-01</start>
-      <end/>
-    </occupation>
-    <group>
-      <name>labbiod</name>
-      <start>2015-09-01</start>
-      <end/>
-    </group>
-  </person>
-  <person>
-    <sim>p1006028</sim>
-    <name>Akik, Wided</name>
-    <email>wided.akik@umontreal.ca</email>
-    <dob>1992-02-16</dob>
-    <office/>
-    <phoneext/>
+    <phoneext>wekjfbejhbfvwejvfjqegvf</phoneext>
     <occupation>
       <name>M.Sc.</name>
       <project>Bioproduction of BCRP</project>
