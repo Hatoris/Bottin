@@ -1,8 +1,8 @@
 <?php
 
-    require_once('app\modify.php');
+    require_once('app\appinformations.php');
     if(isset($_POST)) {
-        $t = modifyInfo::callModify2($_POST['name']);
+        $t = getInfo::callModify($_POST['name']);
         echo $t;
         //print_r($_POST['name']);
         //echo $_POST['name'];

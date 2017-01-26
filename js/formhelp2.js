@@ -25,9 +25,11 @@ $(document).ready(function(){
                 url : 'testadd.php',
                 type : 'post',
                 data : datas,
-                success : function(response) {
-                  if(response == 'Success'){
-                    $("#results").append('<div class="alert alert-success" role="alert"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><span class="sr-only">Success:</span>' + $("form.addpeople").find("input[name='name']").val() + ' a bien été ajouté aux membres de l\'AFAM</div>');
+                dataType: "json",
+                success : function(res) {
+                  if(res.status == 'Success'){
+                    $("#results").append('<div class="alert alert-success" role="alert"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><span class="sr-only">Success:</span><strong> ' + res.name + ' </strong> a bien été ajouté aux membres de l\'AFAM</div>');
+                    $('form.addpeople').trigger('reset');
                   }
                   else {
                     $("#results").append('<div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><span class="sr-only">Error:</span> Vous n\'avaez pas remplis le nom, le sim ou le courriel</div>');
@@ -35,7 +37,7 @@ $(document).ready(function(){
                 },
               });
 
-              $('form.addpeople').trigger('reset');
+
 
         return false;
       });

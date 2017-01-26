@@ -12,6 +12,7 @@ $(document).ready(function(){
           var wrapper         = $(".input_fields_wrap_groupe_bis"); //Fields wrapper
           var add_button      = $(".add_field_button_bis"); //Add button ID
           var add_groupe      = $(".add_field_button_groupe_bis");//Add button group
+
           var x = 20 ;
           $(add_button).on('click', function(e){ //on add input button click
             e.preventDefault();
@@ -39,7 +40,7 @@ $(document).ready(function(){
                 if(y < max_fields){ //max input box allowed
                     y++;
                     $("#groupesbis" + $(this).attr("id")).append('<tr id="d' + y +'"><td><label for="gname">Nom du groupe:</label></br><input type="text" class="form-control" defaultvalue=" " id="gname" name="gname[' + y +']"> </td><td><label for="gstart">Date de debut:</label></br><input type="text" class="form-control" defaultvalue=" " id="gstart" name="gstart[' + y +']"></td><td><label for="gend">Date de fin:</label></br><input type="text" class="form-control" defaultvalue=" " id="gend" name="gend[' + y +']"></td><td><a href="#" class="glyphicon glyphicon-remove remove_field_groupe_bis" id="' + y + '" style="align: center"></a></td></tr>'); //add input box
-                    console.log(y);
+
                 }
                 $("#gstart, #gend").datepicker({
                     format: 'yyyy-mm-dd',
@@ -56,34 +57,55 @@ $(document).ready(function(){
               e.preventDefault(); $('#'+$(this).attr('target')).hide('fade');
           });
 
-
-          $("#submit2" + $(this).attr("id")).click(function() {
+          $(".submit2").on("click", function(e) {
+            e.preventDefault();
             var datas = {};
-          $("form.modifypeople").find('[name]').each(function(index, value) {
-            if($(this).val() == '') {
-              var vals = $(this).attr('defaultvalue');
-            }
-            else {
-              var vals = $(this).val();
-            };
-              var sa = $(this),
-                  name = sa.attr('name');
-                  //value = vals,
-            datas[name] = vals;
-          });
+           //alert("coucou");
+         $("form.modifypeople" + $(this).attr("id")).find('[name]').each(function(index, value) {
+           if($(this).val() == '') {
+             var vals = $(this).attr('defaultvalue');
+           }
+           else {
+             var vals = $(this).val();
+           };
+             var sa = $(this),
+                 name = sa.attr('name');
+                 //value = vals,
+           datas[name] = vals;
+         });
 
-          $.ajax({
-            url : 'testmodify2.php',
-            type : 'POST',
-            data : datas,
-            success : function(response) {
-              console.log(response);
-              $(".results" + $(this).attr('id')).append(response);
+         $.ajax({
+           url : 'testmodify2.php',
+           type : 'post',
+           data : datas,
+           success : function(response2) {
+             $(".results2").html(response2);
+             /*
+             if (response2.status == 'Success'){
+               $(".results2").html('<div class="alert alert-success">' + response2.name + '</div>');
+             }
+             else {
+               $(".results2").html('<div class="alert alert-danger">something wrong</div>');
+             }
 
-            }
-          });
-          return false;
+             var b1 = '<div class="alert alert-success"><ul>';
+             var b2 = '</ul></div>';
+                $(".results2").html(b1);
+              for (var z=0; z< response2.length; z++) {
+                $(".results2").html("<li>" + response2[z] + "</li>");
+              }
+                $(".results2").html(b2);
+              */
+           }
+         });
+
+
+
+
+
+
         });
+
       }
     });
     return false;
