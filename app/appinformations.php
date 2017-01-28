@@ -216,7 +216,7 @@ class getInfo {
             }
 
             static public function callModify($name) {
-                  error_reporting(0);
+                  //error_reporting(0);
                           $z=0;
                           $u=0;
                           $xc = 1;

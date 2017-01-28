@@ -4,21 +4,21 @@ require_once("app/modify.php");
 
     if(isset($_POST)) {
 
+
+
         $modify = new modifyInfo($_POST);
-        $u = $modify -> modifyPeople();
-        echo json_encode($u);exit;
-        //$data['status'] = 'Success';
-        //$data['name'] = $u;
-        /*echo json_encode($data);exit;
-        echo '<ul>' ;
-        foreach ($u as $key => $value)
-        {
-            echo "<li>" . $key . " = " . $value . "</li>" ;
-        }
-         echo '</ul>' ;
-         */
-        //$t = print_r($_POST);
-        //echo '<div class="alert alert-success">' . print_r($_POST) . "</div>";
+        $absd = $modify -> modifyPeople3('peopletest.xml');
+              /*
+        $add = new addInfo($_POST);
+        $add->addPeople2('peopletest.xml', 2);
+        $print = echo print_r($_POST);
+        $data['status'] = 'Success';
+        $data['name'] = $_POST['name'];
+        $data['print'] = $print;
+        echo json_encode($data);exit;
+        */
+        echo $absd;
+
 
     }
 

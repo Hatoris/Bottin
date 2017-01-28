@@ -62,12 +62,13 @@ $(document).ready(function(){
             var datas = {};
            //alert("coucou");
          $("form.modifypeople" + $(this).attr("id")).find('[name]').each(function(index, value) {
-           if($(this).val() == '') {
+           if($(this).val() == ' ') {
              var vals = $(this).attr('defaultvalue');
            }
            else {
-             var vals = $(this).val();
+            var vals = $(this).val();
            };
+
              var sa = $(this),
                  name = sa.attr('name');
                  //value = vals,
@@ -78,32 +79,11 @@ $(document).ready(function(){
            url : 'testmodify2.php',
            type : 'post',
            data : datas,
-           success : function(response2) {
-             $(".results2").html(response2);
-             /*
-             if (response2.status == 'Success'){
-               $(".results2").html('<div class="alert alert-success">' + response2.name + '</div>');
-             }
-             else {
-               $(".results2").html('<div class="alert alert-danger">something wrong</div>');
-             }
+           success : function(res2) {
+                $(".results2").append(res2);
 
-             var b1 = '<div class="alert alert-success"><ul>';
-             var b2 = '</ul></div>';
-                $(".results2").html(b1);
-              for (var z=0; z< response2.length; z++) {
-                $(".results2").html("<li>" + response2[z] + "</li>");
-              }
-                $(".results2").html(b2);
-              */
            }
          });
-
-
-
-
-
-
         });
 
       }
