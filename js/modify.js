@@ -13,11 +13,13 @@ $(document).ready(function(){
           var add_button      = $(".add_field_button_bis"); //Add button ID
           var add_groupe      = $(".add_field_button_groupe_bis");//Add button group
 
-          var x = 20 ;
+          var xx = $(".occ").length;
+          var x = xx - 1;
+          console.log(x);
           $(add_button).on('click', function(e){ //on add input button click
             e.preventDefault();
             if(x < max_fields){ //max input box allowed
-                x++; //text box increment
+                ++x; //text box increment
                 $("#occupationsbis" + $(this).attr("id")).append('<tr id="c' + x +'"><td><label for="oname">Nom de l\'occupation:</label></br><input type="text" class="form-control" defaultvalue=" " id="oname" name="oname[' + x +']"></td><td><label for="oproject">Nom du projet:</label></br><input type="text" class="form-control" defaultvalue=" " id="oproject" name="oproject[' + x +']"></td><td><label for="osuper">Nom du superviseur:</label></br><input type="text" class="form-control" defaultvalue=" " id="osuper" name="osuper[' + x +']"></td><td><label for="ostart">Date de debut:</label></br><input type="text" class="form-control" defaultvalue=" " id="ostart" name="ostart[' + x +']"></td><td><label for="oend">Date de fin:</label></br><input type="text" class="form-control" defaultvalue=" " id="oend" name="oend[' + x +']"></td><td><a href="#" class="glyphicon glyphicon-remove remove_field_bis" id="' + x + '" style="align: center"></a></td></tr>'); //add input box
 
                 }
@@ -34,11 +36,13 @@ $(document).ready(function(){
 
 
 
-            var y = 20 ;
+            var yy = $(".gro").length;
+            var y = yy - 1;
+            console.log(y);
             $(add_groupe).on('click', function(e){ //on add input button click
                 e.preventDefault();
                 if(y < max_fields){ //max input box allowed
-                    y++;
+                    ++y;
                     $("#groupesbis" + $(this).attr("id")).append('<tr id="d' + y +'"><td><label for="gname">Nom du groupe:</label></br><input type="text" class="form-control" defaultvalue=" " id="gname" name="gname[' + y +']"> </td><td><label for="gstart">Date de debut:</label></br><input type="text" class="form-control" defaultvalue=" " id="gstart" name="gstart[' + y +']"></td><td><label for="gend">Date de fin:</label></br><input type="text" class="form-control" defaultvalue=" " id="gend" name="gend[' + y +']"></td><td><a href="#" class="glyphicon glyphicon-remove remove_field_groupe_bis" id="' + y + '" style="align: center"></a></td></tr>'); //add input box
 
                 }
@@ -90,4 +94,16 @@ $(document).ready(function(){
     });
     return false;
   });
+  function getNumbers(inputString){
+    var regex=/\d+\.\d+|\.\d+|\d+/g,
+        results = [],
+        n;
+
+    while(n = regex.exec(inputString)) {
+        results.push(parseFloat(n[0]));
+    }
+
+    return results;
+}
+
 });

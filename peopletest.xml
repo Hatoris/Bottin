@@ -15,8 +15,7 @@ fichier valide en date du 2016-09-06T15h26 -->
     <occupation>
       <name>M.Sc.</name>
       <project>Bioproduction of BCRP</project>
-      <supervisor>Leclair, Grégoire</supervisor>
-      <supervisor>Servant, Marc</supervisor>
+      <supervisor>test</supervisor>
       <start>2015-09-01</start>
     </occupation>
     <group>
@@ -27,10 +26,17 @@ fichier valide en date du 2016-09-06T15h26 -->
       <name>labbiod</name>
       <start>2015-09-01</start>
     </group>
+    <occupation>
+      <name>Ph.D.</name>
+      <project>wkdnwdn</project>
+      <supervisor>jnwejfdnwfn</supervisor>
+      <start>2017-01-29</start>
+      <end> </end>
+    </occupation>
     <group>
       <name>labbiod</name>
       <start>2015-09-01</start>
-      <end>2017-01-03</end>
+      <end> </end>
     </group>
   </person>
   <person>
@@ -42,20 +48,20 @@ fichier valide en date du 2016-09-06T15h26 -->
     <phoneext> 5235</phoneext>
     <occupation>
       <name>occ2</name>
-      <project> </project>
-      <supervisor> </supervisor>
+      <project>nouveau3</project>
+      <supervisor>test</supervisor>
       <start>2017-01-18</start>
       <end>2015-09-01</end>
     </occupation>
     <group>
-      <name>groupe 1</name>
-      <start>2017-01-18</start>
-      <end>2015-09-01</end>
+      <name>groupe 1 oh yheaa</name>
+      <start>2017-02-03</start>
+      <end>2017-01-18</end>
     </group>
     <group>
-      <name>gr2</name>
-      <start>2017-01-18</start>
-      <end>2015-09-01</end>
+      <name>gtrtryueue</name>
+      <start>2017-01-29</start>
+      <end>2017-03-15</end>
     </group>
   </person>
 </people>

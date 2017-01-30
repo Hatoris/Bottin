@@ -288,13 +288,13 @@ class getInfo {
                                        <button class="btn btn-info add_field_button_bis" id="'. $xc .'">Ajouter une occupation</button>
                                        <div class="form-group" style="padding-top : 10px">
                                          <table class="table table-hover" id="occupationsbis'. $xc .'">' ;
-                                              $c = 1 ;
+                                              $c = 0 ;
                                               foreach ($people->occupation as $occ) {
 
                                                echo '<tr id="c'. $c . '" class="occ">
                                                 <td><label for="oname">Nom de l\'occupation:</label></br><input defaultvalue=" " type="text" value="' . $occ->name . '" class="form-control" defaultvalue=" " id="oname" name="oname['. $c . ']">  </td>
                                                 <td><label for="oproject">Nom du projet:</label></br><input defaultvalue=" " type="text" value="' . $occ->project . '" class="form-control" defaultvalue=" " id="oproject" name="oproject['. $c . ']"></td>
-                                                <td><label for="osuper">Nom du superviseur:</label></br><input defaultvalue=" " type="text" value="' . $occ->superviser . '" class="form-control" defaultvalue=" " id="osuper" name="osuper['. $c . ']"></td>
+                                                <td><label for="osuper">Nom du superviseur:</label></br><input defaultvalue=" " type="text" value="' . $occ->supervisor . '" class="form-control" defaultvalue=" " id="osuper" name="osuper['. $c . ']"></td>
                                                 <td><label for="ostart">Date de debut:</label></br><input defaultvalue=" " type="text" value="' . $occ->start . '" class="form-control" defaultvalue=" " id="ostart" name="ostart['. $c . ']"></td>
                                                 <td><label for="oend">Date de fin:</label></br><input defaultvalue=" " type="text" value="' . $occ->end . '" class="form-control" defaultvalue=" " id="oend" name="oend['. $c . ']"></td>
                                                 <td><a href="#" class="glyphicon glyphicon-remove remove_field_bis" id="' . $c . '" style="align: center"></a></td>
@@ -311,13 +311,13 @@ class getInfo {
                                        <button class="btn btn-info add_field_button_groupe_bis" id="'. $xc .'">Ajouter un groupe</button>
                                        <div class="form-group" style="padding-top : 10px">
                                          <table class="table table-hover" id="groupesbis'. $xc .'">';
-                                         $d = 1 ;
+                                         $d = 0 ;
                                          foreach ($people->group as $gro) {
 
                                            echo '<tr id="d'. $d . '" class="gro">
                                              <td><label for="gname">Nom du groupe:</label></br><input type="text" defaultvalue=" " value="' . $gro->name . '" class="form-control" defaultvalue=" " id="gname" name="gname[' . $d . ']"> </td>
-                                             <td><label for="gstart">Date de debut:</label></br><input type="text" defaultvalue=" " value="' . $occ->start . '" class="form-control" defaultvalue=" " id="gstart" name="gstart[' . $d . ']"></td>
-                                             <td><label for="gend">Date de fin:</label></br><input type="text" defaultvalue=" " value="' . $occ->end . '" class="form-control" defaultvalue=" " id="gend" name="gend[' . $d . ']"></td>
+                                             <td><label for="gstart">Date de debut:</label></br><input type="text" defaultvalue=" " value="' . $gro->start . '" class="form-control" defaultvalue=" " id="gstart" name="gstart[' . $d . ']"></td>
+                                             <td><label for="gend">Date de fin:</label></br><input type="text" defaultvalue=" " value="' . $gro->end . '" class="form-control" defaultvalue=" " id="gend" name="gend[' . $d . ']"></td>
                                              <td><a href="#" class="glyphicon glyphicon-remove remove_field_groupe_bis" id="' . $d . '" style="align: center"></a></td>
                                            </tr>' ;
                                            ++$d;

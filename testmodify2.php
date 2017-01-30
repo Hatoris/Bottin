@@ -7,7 +7,8 @@ require_once("app/modify.php");
 
 
         $modify = new modifyInfo($_POST);
-        $absd = $modify -> modifyPeople3('peopletest.xml');
+        $absd = $modify -> modifyPeople('peopletest.xml');
+        
               /*
         $add = new addInfo($_POST);
         $add->addPeople2('peopletest.xml', 2);
