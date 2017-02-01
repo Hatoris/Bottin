@@ -18,6 +18,7 @@ class modifyInfo {
       public $onames = array();
       public $oprojects = array();
       public $osupervisors = array();
+      public $osupervisors1 = array();
       public $ostarts = array();
       public $oends = array();
 
@@ -52,6 +53,11 @@ class modifyInfo {
       foreach ($x['osuper'] as $osuper)
       {
       $this->osupervisors[] = trim($osuper);
+      }
+
+      foreach ($x['osuper1'] as $osupervisor1)
+      {
+      $this->osupervisors1[] = $osupervisor1;
       }
 
       foreach ($x['ostart'] as $ostart)
@@ -116,7 +122,7 @@ class modifyInfo {
                       if ($y >= 1) {
                           $people = $xml->person[$u];
                          //print_r($people);
-                         print_r($this->gends);
+                         //print_r($this->gends);
 
                           if ($people->name != $this->name) {
                                 $r1 = !empty($this->name) ? $this->name : " " ;
@@ -149,16 +155,15 @@ class modifyInfo {
 
                           }
 
-                          $rxc = max(count($this->onames), count($this->oprojects), count($this->osupervisors), count($this->ostarts), count($this->oends));
+                          $rxc = max(count($this->onames), count($this->oprojects), count($this->osupervisors), count($this->osupervisors1), count($this->ostarts), count($this->oends));
                           $rxd = count($people->occupation);
                           $rxd2 = $rxd -1;
                          //print_r($rxd);
                          $ocr = array();
                           for($mu=0; $mu<=$rxd2; $mu++) {
                                 $occ = $people->occupation[$mu];
-                                $ocr[] = $occ;
 
-                                if (!isset($this->onames[$mu]) && !isset($this->oprojects[$mu]) && !isset($this->osupervisors[$mu]) && !isset($this->ostarts[$mu]) && !isset($this->oends[$mu])) {
+                                if (!isset($this->onames[$mu]) && !isset($this->oprojects[$mu]) && !isset($this->osupervisors[$mu]) && !isset($this->osupervisors1[$mu]) && !isset($this->ostarts[$mu]) && !isset($this->oends[$mu])) {
                                       unset($people->occupation[$mu]);
                                 }
                                 else {
@@ -171,9 +176,14 @@ class modifyInfo {
                                       $prorect = !empty($this->oprojects[$mu]) ? $this->oprojects[$mu] : " " ;
                                       $occ->project = $prorect;
                                 }
-                                if ($occ->supervisor != $this->osupervisors[$mu]) {
+                                if ($occ->supervisor[$mu] != $this->osupervisors[$mu]) {
                                       $pruv = !empty($this->osupervisors[$mu]) ? $this->osupervisors[$mu] : " " ;
-                                      $occ->supervisor = $pruv;
+                                      $occ->supervisor[$mu] = $pruv;
+                                }
+                                $mr = $mu + 1;
+                                if ($occ->supervisor[$mr] != $this->osupervisors1[$mu]) {
+                                      $pruv1 = !empty($this->osupervisors1[$mu]) ? $this->osupervisors1[$mu] : " " ;
+                                      $occ->supervisor[$mr] = $pruv1;
                                 }
                                 if ($occ->start != $this->ostarts[$mu]) {
                                       $reat = !empty($this->ostarts[$mu]) ? $this->ostarts[$mu] : " " ;
@@ -196,6 +206,8 @@ class modifyInfo {
                               $occupation->addChild('project', $projectd);
                               $supervisord = !empty($this->osupervisors[$la]) ? $this->osupervisors[$la] : " ";
                               $occupation->addChild('supervisor', $supervisord );
+                              $supervisord1 = !empty($this->osupervisors1[$la]) ? $this->osupervisors1[$la] : " ";
+                              $occupation->addChild('supervisor', $supervisord1 );
                               $startd = !empty($this->ostarts[$la]) ? $this->ostarts[$la] : " ";
                               $occupation->addChild('start', $startd );
                               $endd = !empty($this->oends[$la]) ? $this->oends[$la] : " ";

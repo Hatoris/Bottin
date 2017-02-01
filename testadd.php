@@ -9,6 +9,7 @@ if (isset($_POST['name'])) {
   $add->addPeople('peopletest.xml');
   $data['status'] = 'Success';
   $data['name'] = $_POST['name'];
+  $data['osup'] = $_POST['osuper'];
   echo json_encode($data);exit;
 
 

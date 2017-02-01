@@ -8,10 +8,15 @@ $(document).ready(function(){
       data : 'name=' + datas,
       success : function(response) {
         $("#results1").append(response);
-          var max_fields      = 100; //maximum input boxes allowed
+          var max_fields      = 20; //maximum input boxes allowed
+          var max_fileds_superviseur = 2;
           var wrapper         = $(".input_fields_wrap_groupe_bis"); //Fields wrapper
           var add_button      = $(".add_field_button_bis"); //Add button ID
           var add_groupe      = $(".add_field_button_groupe_bis");//Add button group
+          var zzz = $().length;
+          var zz = 1;
+          var sss = $(".osup1").length
+          var ss = sss - 1;
 
           var xx = $(".occ").length;
           var x = xx - 1;
@@ -20,8 +25,8 @@ $(document).ready(function(){
             e.preventDefault();
             if(x < max_fields){ //max input box allowed
                 ++x; //text box increment
-                $("#occupationsbis" + $(this).attr("id")).append('<tr id="c' + x +'"><td><label for="oname">Nom de l\'occupation:</label></br><input type="text" class="form-control" defaultvalue=" " id="oname" name="oname[' + x +']"></td><td><label for="oproject">Nom du projet:</label></br><input type="text" class="form-control" defaultvalue=" " id="oproject" name="oproject[' + x +']"></td><td><label for="osuper">Nom du superviseur:</label></br><input type="text" class="form-control" defaultvalue=" " id="osuper" name="osuper[' + x +']"></td><td><label for="ostart">Date de debut:</label></br><input type="text" class="form-control" defaultvalue=" " id="ostart" name="ostart[' + x +']"></td><td><label for="oend">Date de fin:</label></br><input type="text" class="form-control" defaultvalue=" " id="oend" name="oend[' + x +']"></td><td><a href="#" class="glyphicon glyphicon-remove remove_field_bis" id="' + x + '" style="align: center"></a></td></tr>'); //add input box
-
+                $("#occupationsbis" + $(this).attr("id")).append('<tr id="c' + x +'"><td><label for="oname">Nom de l\'occupation:</label></br><input type="text" class="form-control" defaultvalue=" " id="oname" name="oname[' + x +']"></td><td><label for="oproject">Nom du projet:</label></br><input type="text" class="form-control" defaultvalue=" " id="oproject" name="oproject[' + x +']"></td><td id ="bb'+ x +'"><label for="osuper">Nom du superviseur:</label> <a href="#" class="glyphicon glyphicon-plus-sign add_osup" id="' + x + '" style="align: center"></a></br><input type="text" class="form-control" defaultvalue=" " id="osuper" name="osuper[' + x +']"></td><td><label for="ostart">Date de debut:</label></br><input type="text" class="form-control" defaultvalue=" " id="ostart" name="ostart[' + x +']"></td><td><label for="oend">Date de fin:</label></br><input type="text" class="form-control" defaultvalue=" " id="oend" name="oend[' + x +']"></td><td><a href="#" class="glyphicon glyphicon-remove remove_field_bis" id="' + x + '" style="align: center"></a></td></tr>'); //add input box
+                zz = 1;
                 }
                 $("#ostart, #oend").datepicker({
                     format: 'yyyy-mm-dd',
@@ -33,7 +38,15 @@ $(document).ready(function(){
 
                 })
             });
+            $("#ostart, #oend").datepicker({
+                format: 'yyyy-mm-dd',
+                todayHighlight: true,
+                autoclose: true,
+            });
+            $("#occupationsbis1").on("click",".remove_field_bis", function(e){ //user click on remove text
+                e.preventDefault();  $("#c" + $(this).attr("id")).remove(); x--;
 
+            })
 
 
             var yy = $(".gro").length;
@@ -56,6 +69,15 @@ $(document).ready(function(){
 
                 })
             });
+            $("#gstart, #gend").datepicker({
+                format: 'yyyy-mm-dd',
+                todayHighlight: true,
+                autoclose: true,
+            });
+            $("#groupesbis").on("click",".remove_field_groupe_bis", function(e){ //user click on remove text
+                e.preventDefault(); $("#d" + $(this).attr("id")).remove(); y--;
+
+            })
 
             $('.close').on('click', function (e) {
               e.preventDefault(); $('#'+$(this).attr('target')).hide('fade');
@@ -89,6 +111,20 @@ $(document).ready(function(){
            }
          });
         });
+
+        $("#occupationsbis1").on("click", ".add_osup", function(e){
+              e.preventDefault();
+              if(zz < max_fileds_superviseur) {
+                  zz++;
+                  ss++;
+                  $("#bb" + $(this).attr("id")).append('<tr id="g' + zz +'"><td><input type="text" class="form-control col-md-1" content="width=80%" defaultvalue=" " id="'+ zz +'" name="osuper1['+ ss +']"></td><td><a href="#" class="glyphicon glyphicon-remove remove_osup" id="'+ zz +'" style="align: center"></a></td></tr>');
+                  console.log( $(this).attr("id"));
+              }
+
+          });
+          $("#occupationsbis1").on("click",".remove_osup", function(e){ //user click on remove text
+              e.preventDefault(); $("#g" + $(this).attr("id")).remove(); zz--; ss--;
+          });
 
       }
     });

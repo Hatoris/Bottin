@@ -12,6 +12,7 @@ class addInfo {
   public $onames = array();
   public $oprojects = array();
   public $osupervisors = array();
+  public $osupervisors1 = array();
   public $ostarts = array();
   public $oends = array();
 
@@ -45,6 +46,11 @@ function __construct($x)
   foreach ($x['osuper'] as $osupervisor)
   {
     $this->osupervisors[] = $osupervisor;
+  }
+
+  foreach ($x['osuper1'] as $osupervisor1)
+  {
+    $this->osupervisors1[] = $osupervisor1;
   }
 
   foreach ($x['ostart'] as $ostart)
@@ -129,7 +135,8 @@ for($y=0; $y<count($this->onames); ++$y)
       $occ= $deb->addChild('occupation');
         $occ->addChild('name', $this->onames[$y]);
         $occ->addChild('project', $this->oprojects[$y]);
-        $occ->addChild('supervisior', $this->osupervisors[$y]);
+        $occ->addChild('supervisor', $this->osupervisors[$y]);
+        $occ->addChild('supervisor', $this->osupervisors1[$y]);
         $occ->addChild('start', $this->ostarts[$y]);
         $occ->addChild('end', $this->oends[$y]);
 }
@@ -145,7 +152,7 @@ for($i=0; $i<count($this->gnames); ++$i)
 
     $xml->asXML($a);
     self::reformat($a);
-
+    //print_r($osupervisors);
 
   }
 
