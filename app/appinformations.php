@@ -220,6 +220,7 @@ class getInfo {
                           $z=0;
                           $u=0;
                           $xc = 1;
+                          $superm = array ();
                               $info = getInfo::callPeopleXML();
 
                                 foreach($info->person as $v) {
@@ -287,14 +288,16 @@ class getInfo {
                                      <div class="input_fields_wrap">
                                        <button class="btn btn-info add_field_button_bis" id="'. $xc .'">Ajouter une occupation</button>
                                        <div class="form-group" style="padding-top : 10px">
-                                         <table class="table table-hover" id="occupationsbis'. $xc .'">' ;
+                                        <div class="table-responsive">
+                                         <table class="table" id="occupationsbis'. $xc .'">' ;
                                               $c = 0 ;
                                               foreach ($people->occupation as $occ) {
+
 
                                                echo '<tr id="c'. $c . '" class="occ">
                                                 <td><label for="oname">Nom de l\'occupation:</label></br><input defaultvalue=" " type="text" value="' . $occ->name . '" class="form-control" defaultvalue=" " id="oname" name="oname['. $c . ']">  </td>
                                                 <td><label for="oproject">Nom du projet:</label></br><input defaultvalue=" " type="text" value="' . $occ->project . '" class="form-control" defaultvalue=" " id="oproject" name="oproject['. $c . ']"></td>
-                                                <td><label for="osuper">Nom du superviseur:</label></br><input defaultvalue=" " type="text" value="' . $occ->supervisor . '" class="form-control" defaultvalue=" " id="osuper" name="osuper['. $c . ']"></td>
+                                                <td><table><td id="bb'. $c .'"><label for="osuper">Nom du superviseur: </label><a href="#" class="glyphicon glyphicon-plus-sign add_osup" id="1" style="align: center"></a></br><input defaultvalue=" " type="text" value="' .  $occ->supervisor[0]  . '" class="form-control" defaultvalue=" " id="osuper" name="osuper[' . $c . ']"></td><table><tr><td><input type="text" class="form-control col-md-1 osup1" content="width=80%" defaultvalue=" " value="'. $occ->supervisor[1]  . '" id="" name="osuper1['. $c . ']"></td><td><a href="#" class="glyphicon glyphicon-remove remove_osup" id="" style="align: center"></a></td></tr></table></td>
                                                 <td><label for="ostart">Date de debut:</label></br><input defaultvalue=" " type="text" value="' . $occ->start . '" class="form-control" defaultvalue=" " id="ostart" name="ostart['. $c . ']"></td>
                                                 <td><label for="oend">Date de fin:</label></br><input defaultvalue=" " type="text" value="' . $occ->end . '" class="form-control" defaultvalue=" " id="oend" name="oend['. $c . ']"></td>
                                                 <td><a href="#" class="glyphicon glyphicon-remove remove_field_bis" id="' . $c . '" style="align: center"></a></td>
@@ -304,6 +307,7 @@ class getInfo {
 
                                           echo '
                                          </table>
+                                         </div>
                                        </div>
                                      </div>
                                      <h4><label for="name">Groupe</label></h4>
