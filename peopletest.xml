@@ -859,4 +859,109 @@ fichier valide en date du 2016-09-06T15h26 -->
       <end> </end>
     </group>
   </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name>sdfef</name>
+      <project>erff</project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start>2017-03-01</start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>34r3f34f</sim>
+    <name>test</name>
+    <email>34r3@edefee.ca</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>testfonction2</name>
+      <start>2017-02-02</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>p1092837</sim>
+    <name>new</name>
+    <email>lol@ffrgg.ca</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupebis</name>
+      <start> </start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>lojfkfol</sim>
+    <name>Florian</name>
+    <email>florianxbernard@gmail.com</email>
+    <dob>2017-02-14</dob>
+    <office> </office>
+    <phoneext>2940 chemin de la polytechnique</phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>afam-student</name>
+      <start> </start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>lojfkfol</sim>
+    <name>Florian</name>
+    <email>florianxbernard@gmail.com</email>
+    <dob>2017-02-14</dob>
+    <office> </office>
+    <phoneext>2940 chemin de la polytechnique</phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>afam-student</name>
+      <start> </start>
+      <end> </end>
+    </group>
+  </person>
 </people>

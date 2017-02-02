@@ -48,10 +48,12 @@ function __construct($x)
     $this->osupervisors[] = $osupervisor;
   }
 
+ if (isset($x['osuper1'])) {
   foreach ($x['osuper1'] as $osupervisor1)
   {
     $this->osupervisors1[] = $osupervisor1;
   }
+}
 
   foreach ($x['ostart'] as $ostart)
   {
@@ -113,7 +115,7 @@ else
   {
 
 
-
+    error_reporting(0);
     $xml = new DOMDocument( '1.0');
     $xml->preserveWhiteSpace = false;
     $xml->formatOutput = TRUE;
