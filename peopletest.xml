@@ -313,4 +313,550 @@ fichier valide en date du 2016-09-06T15h26 -->
       <end> </end>
     </occupation>
   </person>
+  <person>
+    <sim>15421</sim>
+    <name>groupes test</name>
+    <email>groupes@jetest.ca</email>
+    <dob>2017-02-24</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>Groupetest</name>
+      <start>2017-02-22</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>15421</sim>
+    <name>groupes test</name>
+    <email>groupes@jetest.ca</email>
+    <dob>2017-02-24</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>Groupetest</name>
+      <start>2017-02-22</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>15421</sim>
+    <name>groupes test</name>
+    <email>groupes@jetest.ca</email>
+    <dob>2017-02-24</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>Groupetest</name>
+      <start>2017-02-22</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>15421</sim>
+    <name>groupes test</name>
+    <email>groupes@jetest.ca</email>
+    <dob>2017-02-24</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>Groupetest</name>
+      <start>2017-02-22</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>15421</sim>
+    <name>groupes test</name>
+    <email>groupes@jetest.ca</email>
+    <dob>2017-02-24</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>Groupetest</name>
+      <start>2017-02-22</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>15421</sim>
+    <name>groupes test</name>
+    <email>groupes@jetest.ca</email>
+    <dob>2017-02-24</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>Groupetest</name>
+      <start>2017-02-22</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>15421</sim>
+    <name>groupes test</name>
+    <email>groupes@jetest.ca</email>
+    <dob>2017-02-24</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>Groupetest</name>
+      <start>2017-02-22</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>15421</sim>
+    <name>groupes test</name>
+    <email>groupes@jetest.ca</email>
+    <dob>2017-02-24</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>Groupetest</name>
+      <start>2017-02-22</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name>sdfef</name>
+      <project> </project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>dsflwemf</sim>
+    <name>groupe test</name>
+    <email>lol@dee.cd</email>
+    <dob>2017-02-02</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name>sdfef</name>
+      <project>erff</project>
+      <supervisor> </supervisor>
+      <supervisor/>
+      <start>2017-03-01</start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupetestfonction</name>
+      <start>2017-02-19</start>
+      <end> </end>
+    </group>
+  </person>
 </people>

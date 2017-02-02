@@ -5,6 +5,11 @@ $(document).ready(function(){
           autoclose: true,
       });
 
+      $(".gname").autocomplete({
+        source : ["afam-grad", "afam-student", "maman"]
+      });
+
+
       $("#submit").click(function() {
         var datas = {};
 
