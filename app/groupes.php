@@ -21,7 +21,14 @@ class groupes {
       }
       $groupes = array_unique($groupes);
       sort($groupes);
-      self::$groupes = $groupes;
+      $g = json_decode(json_encode($groupes), true);
+       //var_dump($g);
+       foreach ($g as $t) {
+           foreach ($t as $b) {
+               $u[] = utf8_encode($b);
+           }
+       }
+      self::$groupes = $u;
     }
     return self::$groupes ;
   }

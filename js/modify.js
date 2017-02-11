@@ -20,6 +20,8 @@ $(document).ready(function(){
 
           var xx = $(".occ").length;
           var x = xx - 1;
+          var yy = $(".gro").length;
+          var y = yy - 1;
           console.log(x);
           $(add_button).on('click', function(e){ //on add input button click
             e.preventDefault();
@@ -49,8 +51,7 @@ $(document).ready(function(){
             })
 
 
-            var yy = $(".gro").length;
-            var y = yy - 1;
+
             console.log(y);
             $(add_groupe).on('click', function(e){ //on add input button click
                 e.preventDefault();
@@ -74,10 +75,7 @@ $(document).ready(function(){
                 todayHighlight: true,
                 autoclose: true,
             });
-            $("#groupesbis").on("click",".remove_field_groupe_bis", function(e){ //user click on remove text
-                e.preventDefault(); $("#d" + $(this).attr("id")).remove(); y--;
 
-            })
 
             $('.close').on('click', function (e) {
               e.preventDefault(); $('#'+$(this).attr('target')).hide('fade');
@@ -125,7 +123,9 @@ $(document).ready(function(){
           $("#occupationsbis1").on("click",".remove_osup", function(e){ //user click on remove text
               e.preventDefault(); $("#g" + $(this).attr("id")).remove(); zz--; ss--;
           });
-
+          $("#groupesbis1").on("click",".remove_field_groupe_bis", function(e){ //user click on remove text
+                  e.preventDefault(); $("#d" + $(this).attr("id")).remove(); y--;
+              });
       }
     });
     return false;
