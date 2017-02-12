@@ -3,7 +3,12 @@ Application to create and manipulate a directory of professional people using on
 
 This application is code with :
 
-PHP </br>
-Twiter-Bootstrap </br>
-JQuery </br>
-HTML </br>
+* PHP
+* Twiter-Bootstrap
+* JQuery
+* HTML
+
+Plugins used are :
+
+* [font Awesome](http://fontawesome.io/)
+* [bootstrap-datepicker](http://bootstrap-datepicker.readthedocs.io/en/latest/)
