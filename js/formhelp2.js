@@ -5,19 +5,15 @@ $(document).ready(function() {
         autoclose: true,
     });
 
-    /*
-    $("#gname").autocomplete({
-        source: "groupe.php",
-        minLength: 1,
-    });
-    */
-    var options = {
-     source: 'groupe.php',
-     minLength: 1
- };
+
  var selector = 'input#gname';
  $(document).on('keydown.autocomplete', selector, function() {
-     $(this).autocomplete(options);
+     $(this).autocomplete({
+        source : 'groupe.php',
+        minLength : 1,
+
+     });
+     //console.log(groupes);
  });
 
     $("#submit").click(function() {
@@ -33,7 +29,7 @@ $(document).ready(function() {
             var name = $(this).attr('name');
             //value = vals,
             datas[name] = vals;
-            console.log(datas);
+            //console.log(datas);
         });
 
         $.ajax({
@@ -48,7 +44,9 @@ $(document).ready(function() {
                         $('.alert').remove();
                     }, 2000);
                     $('form.addpeople').trigger('reset');
-                    console.log(res.osup);
+                    //console.log(res.osup);
+                } else if (res.status == 'error') {
+                    $("#results").append('<div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><span class="sr-only">Error:</span><strong> ' + res.name + ' </strong> </div>');
                 } else {
                     $("#results").append('<div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><span class="sr-only">Error:</span> Vous n\'avaez pas remplis le nom, le sim ou le courriel' + res + '</div>');
                 }

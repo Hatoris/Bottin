@@ -57,7 +57,7 @@ class modifyInfo {
 
       foreach ($x['osuper1'] as $osupervisor1)
       {
-      $this->osupervisors1[] = $osupervisor1;
+      $this->osupervisors1[] = trim($osupervisor1);
       }
 
       foreach ($x['ostart'] as $ostart)

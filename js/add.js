@@ -42,23 +42,14 @@ $(document).ready(function() {
             todayHighlight: true,
             autoclose: true,
         });
-        $("#gname").on("focus", function(){
-            console.log($(this));
-        $(this).autocomplete({
-            source: "groupe.php",
-            minLength: 1,
-        });
     });
 
-    });
 
     $("#groupes").on("click", ".remove_field_groupe", function(e) { //user click on remove text
         e.preventDefault();
         $("#b" + $(this).attr("id")).remove();
         y--;
     })
-
-
 
     $("#occupations").on("click", ".add_osup", function(e) {
         e.preventDefault();
@@ -76,7 +67,6 @@ $(document).ready(function() {
         z--;
         s--;
     });
-
 
 
 });

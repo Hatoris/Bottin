@@ -715,4 +715,297 @@ fichier valide en date du 2016-09-06T15h26 -->
       <end> </end>
     </group>
   </person>
+  <person>
+    <sim>p08908090</sim>
+    <name>flolasttest</name>
+    <email>flotest@umontreal.ca</email>
+    <dob>2017-02-10</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name>une occupation</name>
+      <project>occupation 1</project>
+      <supervisor>master</supervisor>
+      <supervisor>phD</supervisor>
+      <start>2017-02-10</start>
+      <end> </end>
+    </occupation>
+    <occupation>
+      <name> </name>
+      <project>voila voila</project>
+      <supervisor>pas vraimebt</supervisor>
+      <supervisor> </supervisor>
+      <start>2017-02-10</start>
+      <end>2017-02-11</end>
+    </occupation>
+    <group>
+      <name>groupe1</name>
+      <start>2017-02-10</start>
+      <end> </end>
+    </group>
+    <group>
+      <name>afam-grad</name>
+      <start>2017-02-18</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>p0909098</sim>
+    <name>newlast</name>
+    <email>newlast@umontreal.ca</email>
+    <dob>2017-02-10</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name>allez</name>
+      <project>infjf s</project>
+      <supervisor>medfwnfn</supervisor>
+      <supervisor>kmwsdfknjsfn</supervisor>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <occupation>
+      <name> </name>
+      <project>,emf ke sj</project>
+      <supervisor>qwkjefnskj fn</supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>occc</name>
+      <start>2017-02-10</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>poloeleiei</sim>
+    <name>lolpap</name>
+    <email>plolol@juili.ca</email>
+    <dob>2017-02-10</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor>roule</supervisor>
+      <supervisor> </supervisor>
+      <start>2017-02-10</start>
+      <end> </end>
+    </occupation>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor>test</supervisor>
+      <supervisor/>
+      <start>2017-02-10</start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name>groupe 1 oh yheaa</name>
+      <start>2017-02-10</start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>p083993898298328</sim>
+    <name>parle</name>
+    <email>kill@polol.ca</email>
+    <dob>2017-02-10</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name>test</name>
+      <project>qwkenfbieb</project>
+      <supervisor>wl;kew</supervisor>
+      <supervisor>wdfwedwe</supervisor>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name> </name>
+      <start> </start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>poloio</sim>
+    <name>lololi</name>
+    <email>koool@flo.ca</email>
+    <dob>2017-02-10</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name>qwdqdq</name>
+      <project>qwdqdqwd</project>
+      <supervisor> </supervisor>
+      <supervisor>munch</supervisor>
+      <start>2017-02-10</start>
+      <end> </end>
+    </occupation>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor>monster</supervisor>
+      <supervisor> </supervisor>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name> </name>
+      <start> </start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>plowejfnvb</sim>
+    <name>testavgdhv</name>
+    <email>loook@gmail.ca</email>
+    <dob>2017-02-10</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name>flo</name>
+      <project>kwbwebf</project>
+      <supervisor>wkelnfwelnf</supervisor>
+      <supervisor>NULL</supervisor>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name> </name>
+      <start> </start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>ploo</sim>
+    <name>aller</name>
+    <email>ojin@kjnwef.ca</email>
+    <dob>2017-02-10</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project>qwdqwd</project>
+      <supervisor>lol</supervisor>
+      <supervisor>wefwef</supervisor>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor>test</supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name> </name>
+      <start> </start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>p1079118</sim>
+    <name>flo</name>
+    <email>looool@qwdqwwe.ca</email>
+    <dob>2017-02-10</dob>
+    <office> </office>
+    <phoneext> </phoneext>
+    <occupation>
+      <name> </name>
+      <project>edfwef</project>
+      <supervisor>wefwef</supervisor>
+      <supervisor>wejfbwekjf</supervisor>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <occupation>
+      <name> </name>
+      <project> </project>
+      <supervisor>fonction</supervisor>
+      <supervisor/>
+      <start> </start>
+      <end> </end>
+    </occupation>
+    <group>
+      <name> </name>
+      <start> </start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>p1079118</sim>
+    <name>flo</name>
+    <email>florianxbernard@gmail.com</email>
+    <dob>2017-02-11</dob>
+    <office> </office>
+    <phoneext>2940 chemin de la polytechnique</phoneext>
+    <occupation>
+      <name>Florian Bernard</name>
+      <project>Florian Bernard</project>
+      <supervisor>asdasd</supervisor>
+      <supervisor>asdsad</supervisor>
+      <start>2017-02-15</start>
+      <end> </end>
+    </occupation>
+    <occupation>
+      <name> </name>
+      <project>asdad</project>
+      <supervisor>asdasd</supervisor>
+      <supervisor/>
+      <start>2017-02-22</start>
+      <end>2017-02-10</end>
+    </occupation>
+    <group>
+      <name>groupe 1 oh yheaa</name>
+      <start> </start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>p1079118</sim>
+    <name>flo</name>
+    <email>florianxbernard@gmail.com</email>
+    <dob>2017-02-11</dob>
+    <office> </office>
+    <phoneext>2940 chemin de la polytechnique</phoneext>
+    <occupation>
+      <name>Florian Bernard</name>
+      <project>Florian Bernard</project>
+      <supervisor>asdasd</supervisor>
+      <supervisor>asdsad</supervisor>
+      <start>2017-02-15</start>
+      <end> </end>
+    </occupation>
+    <occupation>
+      <name> </name>
+      <project>asdad</project>
+      <supervisor>asdasd</supervisor>
+      <supervisor/>
+      <start>2017-02-22</start>
+      <end>2017-02-10</end>
+    </occupation>
+    <group>
+      <name>groupe 1 oh yheaa</name>
+      <start> </start>
+      <end> </end>
+    </group>
+  </person>
+  <person>
+    <sim>f</sim>
+    <name>f</name>
+    <email>f</email>
+    <dob>f</dob>
+    <office>f</office>
+    <phoneext>f</phoneext>
+  </person>
 </people>
