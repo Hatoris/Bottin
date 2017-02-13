@@ -158,52 +158,6 @@ for($i=0; $i<count($this->gnames); ++$i)
 
   }
 
-  public function addPeople2 ($a = 'AFAM/peopletest.xml', $b)
-  {
-
-
-
-    $xml = new DOMDocument( '1.0');
-    $xml->preserveWhiteSpace = false;
-    $xml->formatOutput = TRUE;
-
-    $xml = simplexml_load_file($a);
-  //  $xml->loadXML($simpleXml->asXML());
-
-foreach($xml->person as $person) {
-    $deb = $person[$b];
-  }
-      $deb->addChild('sim', $this->sim);
-      $deb->addChild('name', $this->name);
-      $deb->addChild('email', $this->email);
-      $deb->addChild('dob', $this->dob);
-      $deb->addChild('office', $this->office);
-      $deb->addChild('phoneext', $this->phoneext);
-
-  for($y=0; $y<count($this->onames); ++$y)
-  {
-      $occ= $deb->addChild('occupation');
-        $occ->addChild('name', $this->onames[$y]);
-        $occ->addChild('project', $this->oprojects[$y]);
-        $occ->addChild('supervisior', $this->osupervisors[$y]);
-        $occ->addChild('start', $this->ostarts[$y]);
-        $occ->addChild('end', $this->oends[$y]);
-  }
-
-  for($i=0; $i<count($this->gnames); ++$i)
-  {
-  $grp = $deb->addChild('group');
-    $grp->addChild('name', $this->gnames[$i]);
-    $grp->addChild('start', $this->gstarts[$i]);
-    $grp->addChild('end', $this->gends[$i]);
-
-  }
-
-    $xml->asXML($a);
-    self::reformat($a);
-
-
-  }
 
 
 

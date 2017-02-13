@@ -12,3 +12,8 @@ Plugins used are :
 
 * [font Awesome](http://fontawesome.io/)
 * [bootstrap-datepicker](http://bootstrap-datepicker.readthedocs.io/en/latest/)
+* [jQuery UI autocomplete]()
+
+How to use
+
+1. In index.php set xmlFile by giving path to xml file used in the application

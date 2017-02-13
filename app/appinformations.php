@@ -1,11 +1,11 @@
 <?php
 
-/* Ceci est le fichier contenant la classe permetant d'obtenir les infos du fichier xml
+/** Ceci est le fichier contenant la classe permetant d'obtenir les infos du fichier xml
  * Avant de l'utiliserr v/rifier que l'adresse en ligne 20 pointe bien vers le bon fichier
  * (http://afam-udem.ca:81/people.xml)
  *LA classe permet de recuperer les infos dans le fichier xml, mais egaelement de comparer les valeurs selon les
  *la valeur d<entre
-*/
+**/
 
 
 
@@ -47,106 +47,6 @@ class getInfo {
 
         return $xml;
     }
-
-    static public function callPeopleByNode($name, $node, $nodeV )
-    {
-        $i = 0;
-        if ($node == '')
-            {
-                foreach(self::callPeopleXML()->person as $v){
-                    $v = $v->$nodeV;
-                $y = self::Compare($name, $v);
-                if ($y == 1)
-                    {
-                        return $i;
-                    }
-                else
-                    {
-                      $i++;
-                    }
-                }
-            }
-        if ($node == 'group')
-            {
-                foreach(self::callPeopleXML()->person as $v){
-                    $v = $v->group->$nodeV;
-                $y = self::Compare($name, $v);
-                var_dump($v);
-
-                if ($y == 1)
-                    {
-                        echo $v . "</br>";
-                        echo $i . "</br>";
-                    }
-                else
-                    {
-                      $i++;
-                    }
-                }
-            }
-        if ($node == 'occupation')
-            {
-                foreach(self::callPeopleXML()->person as $v){
-                    $v = $v->occupation->$nodeV;
-                $y = self::Compare($name, $v);
-                var_dump($v);
-
-                if ($y == 1)
-                    {
-                        echo $v . "</br>";
-                        echo $i . "</br>";
-                    }
-                else
-                    {
-                      $i++;
-                    }
-                }
-            }
-         }
-
-
-
-
-
-     static public function callPeopleData($data)
-     {
-         foreach(self::callPeopleXML()->person as $v){
-        //var_dump($data);
-         //var_dump($v->$data);
-                      echo "<ul>" .
-                      "<li>"  . "<strong>"  . $v->name . "</strong>" . "</li>" .
-                      "<ul>" .
-                      "<li>" . $v->$data . "</li>" .
-                      "</ul>" . "</ul>";
-                        }
-         }
-
-         static public function callPeoppleDataFEmail($group)
-         {
-             foreach(self::callPeopleXML()->person as $v)
-             {
-                 $z = self::Compare($group, $v->group->name);
-                 if ($z ==1)
-                     {
-                         $groupname[] = $v->group->name;
-                         $name[] = $v->name;
-                         $sim[] = $v->sim;
-                         $email[] = $v ->email;
-                     }
-             }
-             $groupbis = array_unique($groupname);
-            foreach ($groupbis as $groupbi) {
-             echo "<strong>". $groupbi . "</strong>" . " " ;
-         }
-
-            echo "</br>";
-
-             for ($i=0;$i<count($name);$i++) {
-                 echo $email[$i] . "; " ;
-             }
-         }
-
-
 
          /*Call informations for GROUP of AFAM
          */
