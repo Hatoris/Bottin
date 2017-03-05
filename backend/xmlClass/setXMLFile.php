@@ -2,8 +2,8 @@
 namespace backend\xmlClass;
 
 /**
- * @var path to xml file used for the application
- */
+* @var path to xml file used for the application
+*/
 
 class setXMLFile{
 
@@ -14,16 +14,41 @@ class setXMLFile{
   }
 
   public function read() {
-    //include "$this->pathtoxml";
     $xmlFile = $this->pathtoxml;
-        $curl = curl_init();
-        curl_setopt($curl, CURLOPT_URL,"$xmlFile");
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        $contenu = curl_exec($curl);
-        $xml = new \SimpleXMLElement($contenu);
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL,"$xmlFile");
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    $contenu = curl_exec($curl);
+    $xml = new \SimpleXMLElement($contenu);
+    return $xml;
+  }
 
-        return $xml;
-      }
+  public function file() {
+    $xmlfilex = explode( "/" , $this->pathtoxml);
+    return $xmlFile = end($xmlfilex);
+  }
+
+  public function reformatAndSave()
+  {
+    $xmlfilex = explode( "/" , $this->pathtoxml);
+    $xmlFile = end($xmlfilex);
+
+    if(!file_exists($xmlFile)) {
+      return false ;
+    } else
+    {
+      $dom = new \DOMDocument('1.0');
+      $dom->preserveWhiteSpace = false;
+      $dom->formatOutput = true;
+      $dl = @$dom->load($xmlFile); // remove error control operator (@) to print any error message generated while loading.
+      if ( !$dl ) die('Error when saving the document: ' . $xmlFile);
+      $dom->save($xmlFile);
+    }
+  }
+
+
+
+
 
 }
 
