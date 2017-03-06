@@ -1,4 +1,5 @@
 <?php
+namespace Bottin\DIC;
 
 class SmithWatermanGotoh
 {
