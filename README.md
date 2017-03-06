@@ -25,3 +25,4 @@ User part :
     * "Tableau" = return a table with Name, SIM, Courriel, Startinf time in this group End date and if the person is still present or not.
     * "Courriel" =  return all email of people __still working__ in this group
     * "Courriel fusioné" = return all email of people  __still working__ in groups selected
+ok
