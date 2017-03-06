@@ -1,5 +1,5 @@
 <?php
-namespace backend\personClass;
+namespace Bottin\personClass;
 
 class Person{
 

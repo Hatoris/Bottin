@@ -1,6 +1,7 @@
 <?php
-namespace backend;
-require 'DIC\date.php';
+namespace Bottin\viewClass;
+
+
 
   class viewGroup{
     /**
@@ -12,7 +13,7 @@ require 'DIC\date.php';
       Public $emailStock;
 
        static public function viewGroupPeople($xmlFile, $group){
-         error_reporting(0);
+         //error_reporting(0);
            $x = 'a';
            $a = 0;
         foreach($group as $groupName) {
@@ -21,7 +22,7 @@ require 'DIC\date.php';
                   if ($ux->name == $groupName)
                       {
                           $t = $ux->end;
-                          $d = DIC\Date::stealWork($t);
+                          $d = \Bottin\DIC\Date::stealWork($t);
                           if ($d == 1)
                           {
                               $format [] = '<span class="glyphicon glyphicon-ok" style="color:green"></span>';
@@ -116,7 +117,7 @@ require 'DIC\date.php';
                        if ($ux->name == $groupName)
                            {
                                         $t = $ux->end;
-                                        $d = DIC\Date::stealWork($t);
+                                        $d = \Bottin\DIC\Date::stealWork($t);
                                         //var_dump($d);
                                         if ($d == 1)
                                         {
@@ -178,7 +179,7 @@ require 'DIC\date.php';
                    if ($ux->name == $groupName)
                        {
                                     $t = $ux->end;
-                                    $d = DIC\Date::stealWork($t);
+                                    $d = \Bottin\DIC\Date::stealWork($t);
                                     //var_dump($d);
                                     if ($d == 1)
                                     {

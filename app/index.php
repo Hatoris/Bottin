@@ -1,22 +1,19 @@
 <?php
 
-require_once( "DIC\DIContainer.php");
-require 'xmlClass\setXMLFile.php';
-require 'personClass\Person.php';
-require 'view\viewPerson.php';
-require 'view\viewGroup.php';
-require 'DIC\Search.php';
+
+require 'Autoloader.php';
+Bottin\Autoloader::register();
 
 /**
 * Set XML file path activate
 * http://afam-udem.ca:81/people.xml;
-* http://localhost/botin/backend/peopletest.xml
+* http://localhost/botin/Bottin/peopletest.xml
 **/
-$dic = new \backend\DIC\DIContainer();
-$dic->setFactory('backend\xmlClass\setXMLFile', function (){
-  return new backend\xmlClass\setXMLFile("http://afam-udem.ca:81/people.xml");
+$dic = new Bottin\DIC\DIContainer();
+$dic->setFactory('Bottin\xmlClass\SetXMLFile', function (){
+  return new Bottin\xmlClass\SetXMLFile("http://localhost/botin/app/people.xml");
 });
-$XML = $dic->get('backend\xmlClass\setXMLFile');
+$XML = $dic->get('Bottin\xmlClass\SetXMLFile');
 $XMLFile = $XML->file();
 
 
@@ -25,18 +22,19 @@ $XMLFile = $XML->file();
 * First call search application in factory to return a new search for each call, use XML path
 *
 **/
-$dic->setFactory('backend\DIC\Search', function() use ($XML){
-  return new backend\DIC\Search($XML->read());
+$dic->setFactory('Bottin\DIC\Search', function() use ($XML){
+  return new Bottin\DIC\Search($XML->read());
 });
-$search = $dic->get('backend\DIC\Search');
-$dic->setFactory('backend\viewPerson', function(){
-  return new \backend\viewPerson();
+$search = $dic->get('Bottin\DIC\Search');
+$dic->setFactory('Bottin\viewClass\ViewPerson', function(){
+  return new Bottin\viewClass\ViewPerson();
 });
-$viewPerson = $dic->get('backend\viewPerson');
-$dic->setFactory('backend\viewGroup', function(){
-  return new \backend\viewGroup();
+$ViewPerson = $dic->get('Bottin\viewClass\ViewPerson');
+$dic->setFactory('Bottin\viewClass\ViewGroup', function(){
+  return new Bottin\viewClass\ViewGroup();
 });
-$viewGroup = $dic->get('backend\viewGroup');
+$ViewGroup = $dic->get('Bottin\viewClass\ViewGroup');
+
 
 
 if (isset($_POST['nameSearch'])){
@@ -45,22 +43,22 @@ if (isset($_POST['nameSearch'])){
   $personNodeNumber2 = $search->getNodeNumber('sim', $dataLookingFor, TRUE);
   $personNodeNumber = $search->getNodeNumber('email', $dataLookingFor, TRUE);
   if(isset($personNodeNumber1) || isset($personNodeNumber2) || isset($personNodeNumber3)){
-    $viewPersonCard = $viewPerson->viewPersonCard($XML->read(), $personNodeNumber2);
-    return $viewPersonCard;
+    $ViewPersonCard = $ViewPerson->ViewPersonCard($XML->read(), $personNodeNumber2);
+    return $ViewPersonCard;
   }
 }
 
 if (isset($_POST['groupe'])){
   $groupe = $_POST['groupe'];
   $groupes = explode(",", $groupe);
-  $viewGroupPeople= $viewGroup->viewGroupPeople($XML->read(), $groupes);
-  return $viewGroupPeople;
+  $ViewGroupPeople= $ViewGroup->ViewGroupPeople($XML->read(), $groupes);
+  return $ViewGroupPeople;
 }
 
 if (isset($_POST['groupee'])){
   $groupe = $_POST['groupee'];
   $groupes = explode(",", $groupe);
-  $callPeopleByGroupEmail = $viewGroup->callPeopleByGroupEmail($XML->read(), $groupes);
+  $callPeopleByGroupEmail = $ViewGroup->callPeopleByGroupEmail($XML->read(), $groupes);
   return $callPeopleByGroupEmail;
 }
 
@@ -68,13 +66,13 @@ if (isset($_POST['groupee'])){
 if (isset($_POST['groupeMerge'])){
   $groupe = $_POST['groupeMerge'];
   $groupes = explode(",", $groupe);
-  $callPeopleByGroupEmail = $viewGroup->callPeopleByGroupEmail($XML->read(), $groupes, TRUE);
+  $callPeopleByGroupEmail = $ViewGroup->callPeopleByGroupEmail($XML->read(), $groupes, TRUE);
   return $callPeopleByGroupEmail;
 }
 
 
 if (isset($_GET['getGroupName']) and $_GET['getGroupName'] === "getName"){
-  $getGroupName = $viewGroup->getGroupName($XML->read());
+  $getGroupName = $ViewGroup->getGroupName($XML->read());
   echo json_encode($getGroupName);
 }
 
@@ -98,11 +96,11 @@ if(isset($_POST['control'])) {
       echo json_encode($data);exit;
     }
     else {
-      $name = $_POST['name'];
-      $sim = $_POST['sim'];
-      $email = $_POST['email'];
-      $personNodeNumber1 = $search->getNodeNumber('name', $name, TRUE);
-      $personNodeNumber2 = $search->getNodeNumber('sim', $sim, TRUE);
+      $name = $_POST['name'] == " " ? NULL : $_POST['name'];
+      $sim = $_POST['sim'] == " " ? NULL : $_POST['sim'];
+      $email = $_POST['email'] == " " ? NULL : $_POST['email'];
+      $personNodeNumber = $search->getNodeNumber('name', $name, TRUE);
+      $personNodeNumber = $search->getNodeNumber('sim', $sim, TRUE);
       $personNodeNumber = $search->getNodeNumber('email', $email, TRUE);
       if($personNodeNumber != 'error'){
         $data['status'] = 'errorExist';
@@ -110,10 +108,10 @@ if(isset($_POST['control'])) {
         echo json_encode($data);exit;
       }
       else {
-        $dic->setFactory('backend\personClass\Person', function() use ($_POST){
-          return new backend\personClass\Person($_POST);
+        $dic->setFactory('Bottin\personClass\Person', function() use ($_POST){
+          return new Bottin\personClass\Person($_POST);
         });
-        $addPerson = $dic->get('backend\personClass\Person');
+        $addPerson = $dic->get('Bottin\personClass\Person');
         $addPerson->addPerson($XMLFile);
         $XML->reformatAndSave();
         $data['status'] = 'Success';
@@ -130,9 +128,9 @@ if (isset($_POST['nameSearchModify'])){
   $personNodeNumber2 = $search->getNodeNumber('sim', $dataLookingFor, TRUE);
   $personNodeNumber = $search->getNodeNumber('email', $dataLookingFor, TRUE);
   if(isset($personNodeNumber1) || isset($personNodeNumber2) || isset($personNodeNumber3)){
-    $viewPersonModify = $viewPerson->viewPersonModify($XML->read(), $personNodeNumber);
-    if (isset($viewPersonModify)){
-      return $viewPersonModify;
+    $ViewPersonModify = $ViewPerson->ViewPersonModify($XML->read(), $personNodeNumber);
+    if (isset($ViewPersonModify)){
+      return $ViewPersonModify;
     }
     elseif($personNodeNumber == 'error') {
       $error = '<div class="alert alert-danger" role="alert" id="modifyvx1"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span><span class="sr-only">Error:</span><strong> ' . $dataLookingFor . '</strong> n\'a pas été trouvé dans la base de donnée ! <a id="linkClose"  href="#" class="close" target="vx1">&times;</a></div>';
@@ -144,10 +142,10 @@ if (isset($_POST['nameSearchModify'])){
 
 if(isset($_POST['control'])) {
   if ($_POST['control'] === 'modifyPerson') {
-    $dic->setFactory('backend\personClass\Person', function() use ($_POST){
-      return new backend\personClass\Person($_POST);
+    $dic->setFactory('Bottin\personClass\Person', function() use ($_POST){
+      return new Bottin\personClass\Person($_POST);
     });
-    $modifyPerson = $dic->get('backend\personClass\Person');
+    $modifyPerson = $dic->get('Bottin\personClass\Person');
     $name = $_POST['name'];
     $personNodeNumber = $search->getNodeNumber('name', $name);
     foreach ($personNodeNumber as $person) {
@@ -155,21 +153,12 @@ if(isset($_POST['control'])) {
     }
     $add = $modifyPerson->modifyPerson($XMLFile, $personNodeNumber);
     $save = $XML->reformatAndSave();
-    if ($add == false) {
-      $data['status'] = 'errorModify';
-      $data['name'] = $name;
-      echo json_encode($data);exit;
-} elseif ($save == false) {
-  $data['status'] = 'errorSave';
-  $data['name'] = $name;
-  echo json_encode($data);exit;
-}    else {
       $data['status'] = 'Success';
       $data['name'] = $name;
       echo json_encode($data);exit;
     }
   }
-}
+
 
 
 ?>

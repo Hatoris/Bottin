@@ -4,16 +4,20 @@ $(document).ready(function(){
       var name = $("#name").val();
       // AJAX Code To Submit Form.
       $.ajax({
-        url: "backend/index.php",
+        url: "app/index.php",
         type: "POST",
         data: 'nameSearch=' + name,
         success: function(result){
           if (result == 0){
-            var html = '<div id="myAlert1" class="alert alert-danger" target="1" role="alert"><a id="linkClose" href="#" class="close">&times;</a> <strong>';
+            var html = '<div id="myAlert1" class="alert alert-danger" target="1" role="alert"><a id="linkClose" target="1" href="#" class="close">&times;</a> <strong>';
             var html2 = '</strong> , n\'existe pas la liste des membres de l\'AFAM!</div>';
             var all = html + name + html2;
             $("#results").fadeIn("slow", function() {
-              $("#results").html(all)
+              $("#results").html(all);
+              setTimeout(function() {
+                $('.alert').remove();
+              }, 3000);
+              $('form').trigger('reset');
             });
           }
           else {
@@ -42,7 +46,7 @@ new Clipboard('.btn');
 
 
 //return groupname in the xml file
-$.getJSON("backend/index.php", { getGroupName: "getName" }).done(function(result) {
+$.getJSON("app/index.php", { getGroupName: "getName" }).done(function(result) {
       var groupeSelect = $("#groupe");
       $.each(result, function() {
           groupeSelect.append($("<option />").val(this[0]).text(this[0]));
@@ -61,7 +65,7 @@ $.getJSON("backend/index.php", { getGroupName: "getName" }).done(function(result
       if($("#groupe0:checked").val() == 'table')
         {
           $.ajax({
-            url: "backend/index.php",
+            url: "app/index.php",
             type: "POST",
             data: 'groupe=' + groupe,
             success: function(result){
@@ -75,7 +79,7 @@ $.getJSON("backend/index.php", { getGroupName: "getName" }).done(function(result
       if($("#groupe1:checked").val() == 'email')
         {
           $.ajax({
-            url: "backend/index.php",
+            url: "app/index.php",
             type: "POST",
             data: 'groupee=' + groupe,
             success: function(result){
@@ -89,7 +93,7 @@ $.getJSON("backend/index.php", { getGroupName: "getName" }).done(function(result
         if($("#groupe2:checked").val() == 'emailMerge')
           {
             $.ajax({
-              url: "backend/index.php",
+              url: "app/index.php",
               type: "POST",
               data: 'groupeMerge=' + groupe,
               success: function(result){

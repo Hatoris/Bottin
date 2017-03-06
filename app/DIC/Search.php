@@ -1,5 +1,5 @@
 <?php
-namespace backend\DIC;
+namespace Bottin\DIC;
 require 'SmithWatermanGotoh.php';
 
 class Search {
@@ -7,7 +7,7 @@ class Search {
   Private $xml; //xml is a simple xml load easy to manipulate.
   Public $nodeNumberStock;
 
-  function __construct($xml ) {
+  function __construct($xml) {
    $this->xml = $xml;
   }
   /*
@@ -22,8 +22,9 @@ class Search {
         $y = new SmithWatermanGotoh();
         $t= strval(strtolower($name1));
         $y= $y->compare(strval(strtolower($name)), $t);
-        if ($y == 1)
-      return $y;
+        if ($y == 1) {
+          return $y;
+        }
    }
 
 /**
@@ -53,7 +54,6 @@ class Search {
     if(isset($nodeNumbers) OR isset($this->nodeNumberStock)){
       if(!empty($nodeNumbers) OR !empty($this->nodeNumberStock)){
         if($stock) {
-          //var_dump($this->nodeNumberStock);
           return array_unique($this->nodeNumberStock);
         }
         else {

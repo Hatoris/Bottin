@@ -1,6 +1,6 @@
 <?php
-namespace backend;
-//require 'DIC\date.php';
+namespace Bottin\viewClass;
+
 
 class viewPerson {
 /**
@@ -15,7 +15,7 @@ class viewPerson {
       $z=0;
         foreach($nodeNumber as $x) {
             $person = $xmlFile->person[$x];
-                  $date = DIC\Date::lessYears($person->dob);
+                  $date = \Bottin\DIC\Date::lessYears($person->dob);
                   $date = utf8_encode($date);
                   echo
 
@@ -325,8 +325,9 @@ class viewPerson {
                                        <div>
                                          <button type="submit2" id="'. $xc .'" value="send" style="margin-top : 10px"class="btn btn-warning submit2"><span class="glyphicon glyphicon glyphicon-paste"></span> Modifier</button>
                                        </div>
-                                        <span class="results2" id="'. $xc .'"></span>
                                        </form>
+                                       <span class="results2" id="'. $xc .'">  <br>
+                                       </span>
                                      </div>
                                    </div>' ;
 

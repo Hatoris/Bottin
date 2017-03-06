@@ -1,5 +1,5 @@
 <?php
-namespace backend\xmlClass;
+namespace Bottin\xmlClass;
 
 /**
 * @var path to xml file used for the application

@@ -35,7 +35,7 @@ $(document).ready(function() {
     }
   });
 
-  $.getJSON("backend/index.php", { getGroupName: "getName" }).done(function(result) {
+  $.getJSON("app/index.php", { getGroupName: "getName" }).done(function(result) {
     $.each(result, function() {
       var i = 0;
       groupeName.push(this[i]);
@@ -62,7 +62,7 @@ $(document).ready(function() {
     var datas =   $("form.addpeople").dataFind('addPerson');
 
     $.ajax({
-      url: 'backend/index.php',
+      url: 'app/index.php',
       type: 'POST',
       data: datas,
       dataType: 'json',
@@ -166,7 +166,7 @@ $(document).ready(function() {
     var  datas = $("#modifyname").val();
     $('form#modify').trigger('reset');
     $.ajax({
-      url : "backend/index.php",
+      url : "app/index.php",
       type : "POST",
       data : 'nameSearchModify=' + datas,
       success : function(response) {
@@ -178,7 +178,7 @@ $(document).ready(function() {
         var zz = 1;
         var ss = wrapper_ocupation_modify.find(".osup1").length - 1
         var xx = wrapper_ocupation_modify.find(".occ").length - 1
-        var y = wrapper_groupe_modify.find(".gro").length - 1
+        var yy = wrapper_groupe_modify.find(".gro").length - 1
         var ids;
 
 
@@ -214,7 +214,7 @@ $(document).ready(function() {
             autoclose: true,
           });
         });
-        $("#groupesbis" + $(this).attr("id")).on("click",".remove_field_groupe_bis", function(e){ //user click on remove text
+        $("#groupesbis" + $(this).attr("target")).on("click",".remove_field_groupe_bis", function(e){ //user click on remove text
           e.preventDefault(); $("#d" + $(this).attr("id")).remove(); yy--;
         });
 
@@ -230,7 +230,7 @@ $(document).ready(function() {
           ids = $(this).attr('id');
           //console.log(datas2);
           $.ajax({
-            url : 'backend/index.php',
+            url : 'app/index.php',
             type : 'POST',
             data : datas2,
             dataType: 'json',
