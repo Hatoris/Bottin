@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="people.xsl"?>
+<!-- fichier valide en date du 2016-09-06T15h26 -->
+<people xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="people.xsd">
+  <person>
+    <sim>p1006028</sim>
+    <name>Akik, Wided</name>
+    <email>wided.akik@umontreal.ca</email>
+    <dob>1992-02-16</dob>
+    <occupation>
+      <name>M.Sc.</name>
+      <project>Bioproduction of BCRP</project>
+      <supervisor>Leclair, Grégoire</supervisor>
+      <supervisor>Servant, Marc</supervisor>
+      <start>2015-09-01</start>
+    </occupation>
+    <group>
+      <name>afam-grad</name>
+      <start>2015-09-01</start>
+    </group>
+    <group>
+      <name>labbiod</name>
+      <start>2015-09-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p1023666</sim>
+    <name>Alarie, Hugo</name>
+    <email>hugo.alarie@umontreal.ca</email>
+    <dob>1993-03-15</dob>
+    <occupation>
+      <name>M.Sc.</name>
+      <project>Pharmaceutical compounding</project>
+      <supervisor>Leclair, Grégoire</supervisor>
+      <supervisor>Roullin, Gaëlle</supervisor>
+      <start>2016-09-01</start>
+    </occupation>
+    <group>
+      <name>afam-grad</name>
+      <start>2016-09-01</start>
+    </group>
+    <group>
+      <name>labbiod</name>
+      <start>2016-09-01</start>
+    </group>
+    <group>
+      <name>pfbio</name>
+      <start>2016-05-15</start>
+    </group>
+    <group>
+      <name>afam-undergrad</name>
+      <start>2016-01-04</start>
+      <end>2016-04-30</end>
+    </group>
+  </person>
+  <person>
+    <sim>p1034591</sim>
+    <name>Alsharif, Shaker</name>
+    <email>shaker.alsharif@umontreal.ca</email>
+    <group>
+      <name>afam-grad</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p1088430</sim>
+    <name>Antone, Nour</name>
+    <email>antone.nour@umontreal.ca </email>
+    <dob>1995-09-10</dob>
+    <group>
+      <name>afam-undergrad</name>
+      <start>2016-05-01</start>
+      <end>2016-08-31</end>
+    </group>
+  </person>
+  <person>
+    <sim>p0783520</sim>
+    <name>Banquy, Xavier</name>
+    <email>xavier.banquy@umontreal.ca</email>
+    <group>
+      <name>afam-prof</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p1079118</sim>
+    <name>Bernard, Florian</name>
+    <email>florian.bernard@umontreal.ca</email>
+    <dob>1990-07-20</dob>
+    <group>
+      <name>afam-grad</name>
+      <start>2014-09-01</start>
+      <end> </end>
+    </group>
+    <group>
+      <name>labbiod</name>
+      <start>2014-09-01</start>
+      <end> </end>
+    </group>
+    <office>4179</office>
+    <group>
+      <name>afam-lnp</name>
+      <start>2014-09-01</start>
+      <end> </end>
+    </group>
+    <phoneext>0407</phoneext>
+  </person>
+  <person>
+    <sim>p1070555</sim>
+    <name>Besheir, Hoda</name>
+    <email>hm.besheir@umontreal.ca</email>
+    <group>
+      <name>afam-grad</name>
+      <start>1970-01-01</start>
+      <end>2016-08-31</end>
+    </group>
+  </person>
+  <person>
+    <sim>blaisl</sim>
+    <name>Blais, Lucie</name>
+    <email>lucie.blais@umontreal.ca</email>
+    <group>
+      <name>comfac-sel-prof-2016-17-soins</name>
+      <start>2016-09-01</start>
+      <end>2016-12-31</end>
+    </group>
+  </person>
+  <person>
+    <sim>p1130656</sim>
+    <name>Bonnemain, Lola</name>
+    <email>lola.bonnemain@umontreal.ca</email>
+    <dob>1992-06-22</dob>
+    <group>
+      <name>afam-undergrad</name>
+      <start>1970-01-01</start>
+      <end>2016-08-31</end>
+    </group>
+  </person>
+  <person>
+    <sim>bouma</sim>
+    <name>Bouchard, Marie-Ève</name>
+    <email>marie-eve.bouchard.1@umontreal.ca</email>
+    <group>
+      <name>comfac-sel-prof-2016-17-soins</name>
+      <start>2016-09-01</start>
+      <end>2016-12-31</end>
+    </group>
+  </person>
+  <person>
+    <sim>p1094191</sim>
+    <name>Cunningham, Alexander</name>
+    <email>alexander.cunningham@umontreal.ca</email>
+    <group>
+      <name>afam-grad</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p0943935</sim>
+    <name>de la Tousche, Domitille</name>
+    <email>domitille.de.la.tousche@umontreal.ca</email>
+    <group>
+      <name>afam-undergrad</name>
+      <start>2015-09-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p0943935</sim>
+    <name>Derbali, Rabeb Mouna</name>
+    <email>rabeb.mouna.derbali@umontreal.ca</email>
+    <dob>1988-04-19</dob>
+    <group>
+      <name>afam-staff</name>
+      <start>2015-09-01</start>
+    </group>
+    <group>
+      <name>pfbio</name>
+      <start>2016-09-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p0888035</sim>
+    <name>Elkin, Igor</name>
+    <email>igor.elkin@umontreal.ca</email>
+    <group>
+      <name>afam-staff</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p1139477</sim>
+    <name>Esposito, Cloé</name>
+    <email>cloé.esposito@umontreal.ca</email>
+    <dob>1992-12-23</dob>
+    <group>
+      <name>afam-grad</name>
+      <start>2016-08-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p1069879</sim>
+    <name>Faivre, Jimmy</name>
+    <email>jimmy.faivre@umontreal.ca</email>
+    <dob>1991-01-29</dob>
+    <group>
+      <name>afam-grad</name>
+      <start>2014-10-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>fakharis</sim>
+    <name>Fakhari Tehrani, Soudeh</name>
+    <email>s.fakhari.tehrani@umontreal.ca</email>
+    <dob>1980-10-25</dob>
+    <group>
+      <name>afam-grad</name>
+      <start>2013-09-01</start>
+    </group>
+    <group>
+      <name>afam-staff</name>
+      <start>2013-09-01</start>
+      <end>2014-09-01</end>
+    </group>
+  </person>
+  <person>
+    <sim>p1029011</sim>
+    <name>Flandrin, Aurore</name>
+    <email>aurore.flandrin@umontreal.ca</email>
+    <dob>1989-07-04</dob>
+    <group>
+      <name>afam-grad</name>
+      <start>2014-09-01</start>
+      <end>2016-12-31</end>
+    </group>
+    <group>
+      <name>afam-undergrad</name>
+      <start>2014-05-01</start>
+      <end>2014-08-31</end>
+    </group>
+    <group>
+      <name>labbiod</name>
+      <start>2014-09-01</start>
+      <end>2016-12-31</end>
+    </group>
+  </person>
+  <person>
+    <sim>p0796640</sim>
+    <name>Friciu, Mihaela</name>
+    <email>mihaela.friciu@umontreal.ca</email>
+    <dob>1978-06-17</dob>
+    <occupation>
+      <name>Research associate</name>
+      <project>Platform of biopharmacy</project>
+      <supervisor>Leclair, Grégoire</supervisor>
+      <start>2012-10-01</start>
+    </occupation>
+    <group>
+      <name>afam-staff</name>
+      <start>2012-10-01</start>
+    </group>
+    <group>
+      <name>pfbio</name>
+      <start>2012-10-01</start>
+    </group>
+    <group>
+      <name>labbiod</name>
+      <start>2012-10-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p0786221</sim>
+    <name>Garcia, Araceli</name>
+    <email>araceli.ac.garcia@umontreal.ca</email>
+    <group>
+      <name>afam-staff</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p1107252</sim>
+    <name>Garcia, Teresita</name>
+    <email>teresita.rode.garcia@umontreal.ca</email>
+    <dob>1987-10-03</dob>
+    <group>
+      <name>afam-grad</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>giassons</sim>
+    <name>Giasson, Suzanne</name>
+    <email>suzanne.giasson@umontreal.ca</email>
+    <group>
+      <name>afam-prof</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p1003903</sim>
+    <name>Giraud, Lucie</name>
+    <email>lucie.giraud@umontreal.ca</email>
+    <group>
+      <name>afam-grad</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p1071862</sim>
+    <name>Hanauer, Nicolas</name>
+    <email>nicolas.hanauer@umontreal.ca</email>
+    <group>
+      <name>afam-grad</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>hildgenp</sim>
+    <name>Hildgen, Patrice</name>
+    <email>patrice.hildgen@umontreal.ca</email>
+    <group>
+      <name>afam-prof</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>jutrasm</sim>
+    <name>Jutras, Martin</name>
+    <email>martin.jutras@umontreal.ca</email>
+    <dob>1963-12-01</dob>
+    <occupation>
+      <name>Research associate</name>
+      <project>Platform of biopharmacy</project>
+      <supervisor>Leclair, Grégoire</supervisor>
+      <start>2012-11-01</start>
+    </occupation>
+    <group>
+      <name>afam-staff</name>
+      <start>2012-11-01</start>
+    </group>
+    <group>
+      <name>pfbio</name>
+      <start>2012-11-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p1083600</sim>
+    <name>Kassis, Jad</name>
+    <email>jad.kassis@umontreal.ca</email>
+    <group>
+      <name>afam-undergrad</name>
+      <start>2016-05-01</start>
+      <end>2016-08-31</end>
+    </group>
+  </person>
+  <person>
+    <sim>lacassef</sim>
+    <name>Lacasse, François-Xavier</name>
+    <email>francois.lacasse@umontreal.ca</email>
+    <group>
+      <name>afam-prof</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p1070273</sim>
+    <name>Lalloz, Augustine</name>
+    <email>augustine.lalloz@umontreal.ca</email>
+    <dob>1991-07-10</dob>
+    <group>
+      <name>afam-grad</name>
+      <start>2014-10-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>lalondel</sim>
+    <name>Lalonde, Lyne</name>
+    <email>lyne.lalonde@umontreal.ca</email>
+    <group>
+      <name>comfac-sel-prof-2016-17-soins</name>
+      <start>2016-09-01</start>
+      <end>2016-12-31</end>
+    </group>
+  </person>
+  <person>
+    <sim>p0958238</sim>
+    <name>Latreille, Pierre-Luc</name>
+    <email>pierre-luc.latreille@umontreal.ca</email>
+    <group>
+      <name>afam-grad</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>laurierc</sim>
+    <name>Laurier, Claudine</name>
+    <email>claudine.laurier@umontreal.ca</email>
+    <group>
+      <name>comfac-sel-prof-2016-17-soins</name>
+      <start>2016-09-01</start>
+      <end>2016-12-31</end>
+    </group>
+  </person>
+  <person>
+    <sim>p0843875</sim>
+    <name>Leblond Chain, Jeanne</name>
+    <email>jeanne.leblond-chain@umontreal.ca</email>
+    <group>
+      <name>afam-prof</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>leclairg</sim>
+    <name>Leclair, Grégoire</name>
+    <email>gregoire.leclair@umontreal.ca</email>
+    <dob>1973-08-25</dob>
+    <occupation>
+      <name>Assistant professor</name>
+      <start>2008-12-01</start>
+      <end>2015-05-31</end>
+    </occupation>
+    <occupation>
+      <name>Director</name>
+      <project>Platform of biopharmacy</project>
+      <start>2009-09-01</start>
+    </occupation>
+    <occupation>
+      <name>Interim vice-dean of studies</name>
+      <start>2014-09-01</start>
+      <end>2015-05-31</end>
+    </occupation>
+    <occupation>
+      <name>Associate professor</name>
+      <start>2015-06-01</start>
+    </occupation>
+    <group>
+      <name>afam-prof</name>
+      <start>2008-12-01</start>
+    </group>
+    <group>
+      <name>pfbio</name>
+      <start>2009-09-01</start>
+    </group>
+    <group>
+      <name>labbiod</name>
+      <start>1970-01-01</start>
+    </group>
+    <group>
+      <name>comfac-sel-prof-2016-17-soins</name>
+      <start>2016-09-01</start>
+      <end>2016-12-31</end>
+    </group>
+  </person>
+  <person>
+    <sim>p0830615</sim>
+    <name>Melkoumov, Alexandre</name>
+    <email>alexandre.melkoumov@umontreal.ca</email>
+    <dob>1987-03-12</dob>
+    <group>
+      <name>afam-grad</name>
+      <start>1970-01-01</start>
+    </group>
+    <group>
+      <name>labbiod</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p1079697</sim>
+    <name>Meloche-Brouillette, Maxime</name>
+    <email>maxime.meloche-brouillette@umontreal.ca</email>
+    <group>
+      <name>afam-undergrad</name>
+      <start>2016-05-01</start>
+      <end>2016-08-31</end>
+    </group>
+  </person>
+  <person>
+    <sim>perresy</sim>
+    <name>Perreault, Sylvie</name>
+    <email>sylvie.perreau@umontreal.ca</email>
+    <group>
+      <name>comfac-sel-prof-2016-17-soins</name>
+      <start>2016-09-01</start>
+      <end>2016-12-31</end>
+    </group>
+  </person>
+  <person>
+    <sim>rabanelj</sim>
+    <name>Rabanel, Jean-Michel</name>
+    <email>jean-michel.rabanel@umontreal.ca</email>
+    <group>
+      <name>afam-staff</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>roullinv</sim>
+    <name>Roullin, Gaëlle</name>
+    <email>vg.roullin@umontreal.ca</email>
+    <group>
+      <name>afam-prof</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p1113261</sim>
+    <name>Shrestha, Buddha Ratna</name>
+    <email>buddha.ratna.shrestha@umontreal.ca</email>
+    <group>
+      <name>afam-grad</name>
+      <start>1970-01-01</start>
+    </group>
+  </person>
+  <person>
+    <sim>p0947617</sim>
+    <name>St-Jean, Isabelle</name>
+    <email>isabelle.st-jean.2@umontreal.ca</email>
+    <occupation>
+      <name>Research associate</name>
+      <project>Platform of biopharmacy</project>
+      <supervisor>Leclair, Grégoire</supervisor>
+      <start>2016-10-31</start>
+    </occupation>
+    <group>
+      <name>afam-staff</name>
+      <start>2016-10-31</start>
+    </group>
+    <group>
+      <name>pfbio</name>
+      <start>2016-10-31</start>
+    </group>
+    <group>
+      <name>labbiod</name>
+      <start>2016-10-31</start>
+    </group>
+  </person>
+  <person>
+    <sim>vanierma</sim>
+    <name>Vanier, Marie-Claude</name>
+    <email>marie-claude.vanier@umontreal.ca</email>
+    <group>
+      <name>comfac-sel-prof-2016-17-soins</name>
+      <start>2016-09-01</start>
+      <end>2016-12-31</end>
+    </group>
+  </person>
+  <person>
+    <sim>p1051522</sim>
+    <name>Vershinin, Maria</name>
+    <email>maria.vershinin@umontreal.ca</email>
+    <dob>1993-08-04</dob>
+    <group>
+      <name>afam-undergrad</name>
+      <start>2016-05-01</start>
+      <end>2016-08-31</end>
+    </group>
+  </person>
+  <person>
+    <sim>p1027879</sim>
+    <name>Viricel, Warren</name>
+    <email>warren.viricel@umontreal.ca</email>
+    <dob>1989-12-09</dob>
+    <group>
+      <name>afam-grad</name>
+      <start>1970-01-01</start>
+      <end>2016-08-31</end>
+    </group>
+  </person>
+  <person>
+    <sim>p0966946</sim>
+    <name>Puscas, Ina</name>
+    <email>ina.puscas@umontreal.ca</email>
+    <dob>1985-01-31</dob>
+    <group>
+      <name>afam-undergrad</name>
+      <start>2014-05-01</start>
+      <end>2014-08-31</end>
+    </group>
+    <group>
+      <name>afam-undergrad</name>
+      <start>2015-05-01</start>
+      <end>2015-08-31</end>
+    </group>
+    <group>
+      <name>afam-grad</name>
+      <start>2016-09-01</start>
+      <end> </end>
+    </group>
+    <office>4179</office>
+    <phoneext>0407</phoneext>
+  </person>
+</people>
