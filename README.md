@@ -1,4 +1,4 @@
-# Botin
+# Bottin
 Application to create and manipulate a directory of professional people using only an xml document.
 
 This application is code for php and used those element to work :
